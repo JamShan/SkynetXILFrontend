@@ -61,9 +61,57 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Demo\HelloWorld.cs" />
     <Compile Include="Assets\HotScripts\MonoSerialTest.cs" />
     <Compile Include="Assets\HotScripts\TestSer.cs" />
+    <Compile Include="Assets\Scripts\Controllers\GameController.cs" />
+    <Compile Include="Assets\Scripts\Demos\HelloWorld.cs" />
+    <Compile Include="Assets\Sources\Components\Game\InitialPositionComponent.cs" />
+    <Compile Include="Assets\Sources\Components\Game\PlayerComponent.cs" />
+    <Compile Include="Assets\Sources\Components\Game\ResourceComponent.cs" />
+    <Compile Include="Assets\Sources\Components\Game\ViewComponent.cs" />
+    <Compile Include="Assets\Sources\Components\Unique\Game\GameDataSetup.cs" />
+    <Compile Include="Assets\Sources\Components\Unique\Game\InputComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Components\GameDataSetupComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Contexts.cs" />
+    <Compile Include="Assets\Sources\Generated\Events\EventsAttribute.cs" />
+    <Compile Include="Assets\Sources\Generated\Events\EventsComponentsLookup.cs" />
+    <Compile Include="Assets\Sources\Generated\Events\EventsContext.cs" />
+    <Compile Include="Assets\Sources\Generated\Events\EventsEntity.cs" />
+    <Compile Include="Assets\Sources\Generated\Events\EventsMatcher.cs" />
+    <Compile Include="Assets\Sources\Generated\Feature.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameGameDataSetupComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameInitialPositionComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameInputComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GamePlayerComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameResourceComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameViewComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameAttribute.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameComponentsLookup.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameContext.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameEntity.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameMatcher.cs" />
+    <Compile Include="Assets\Sources\Generated\GameState\GameStateAttribute.cs" />
+    <Compile Include="Assets\Sources\Generated\GameState\GameStateComponentsLookup.cs" />
+    <Compile Include="Assets\Sources\Generated\GameState\GameStateContext.cs" />
+    <Compile Include="Assets\Sources\Generated\GameState\GameStateEntity.cs" />
+    <Compile Include="Assets\Sources\Generated\GameState\GameStateMatcher.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\InputAttribute.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\InputComponentsLookup.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\InputContext.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\InputEntity.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\InputMatcher.cs" />
+    <Compile Include="Assets\Sources\Generated\Simulate\SimulateAttribute.cs" />
+    <Compile Include="Assets\Sources\Generated\Simulate\SimulateComponentsLookup.cs" />
+    <Compile Include="Assets\Sources\Generated\Simulate\SimulateContext.cs" />
+    <Compile Include="Assets\Sources\Generated\Simulate\SimulateEntity.cs" />
+    <Compile Include="Assets\Sources\Generated\Simulate\SimulateMatcher.cs" />
+    <Compile Include="Assets\Sources\Services\Game\GameEntityService.cs" />
+    <Compile Include="Assets\Sources\Services\Game\GameServices.cs" />
+    <Compile Include="Assets\Sources\Systems\Game\GameSystems.cs" />
+    <Compile Include="Assets\Sources\Systems\Game\Systems\HelloWorldSystem.cs" />
+    <Compile Include="Assets\Sources\Systems\Game\Systems\InitializePlayerSystem.cs" />
+    <Compile Include="Assets\Sources\Systems\Game\Systems\InputSystem.cs" />
+    <Compile Include="Assets\Sources\Systems\Game\Systems\InstantiateViewSystem.cs" />
     <Compile Include="Assets\XIL\Auto\CLRBindings.cs" />
     <Compile Include="Assets\XIL\Auto\GenDelegateBridge_pc.cs" />
     <Compile Include="Assets\XIL\Auto\GenObjects_pc.cs" />
@@ -600,6 +648,39 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>D:/Apps/Unity 2018.3.0b9/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="Pathfinding.ClipperLib">
+      <HintPath>D:/workspace/SkyXIL/XIL/Assets/Plugins/AstarPathfindingProject/Clipper/Pathfinding.ClipperLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+      <HintPath>D:/workspace/SkyXIL/XIL/Assets/Plugins/AstarPathfindingProject/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="Pathfinding.Poly2Tri">
+      <HintPath>D:/workspace/SkyXIL/XIL/Assets/Plugins/AstarPathfindingProject/Poly2Tri/Pathfinding.Poly2Tri.dll</HintPath>
+    </Reference>
+    <Reference Include="DesperateDevs.Logging">
+      <HintPath>D:/workspace/SkyXIL/XIL/Assets/Plugins/Entitas/DesperateDevs/DesperateDevs.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="DesperateDevs.Networking">
+      <HintPath>D:/workspace/SkyXIL/XIL/Assets/Plugins/Entitas/DesperateDevs/DesperateDevs.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="DesperateDevs.Serialization">
+      <HintPath>D:/workspace/SkyXIL/XIL/Assets/Plugins/Entitas/DesperateDevs/DesperateDevs.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="DesperateDevs.Utils">
+      <HintPath>D:/workspace/SkyXIL/XIL/Assets/Plugins/Entitas/DesperateDevs/DesperateDevs.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Entitas.CodeGeneration.Attributes">
+      <HintPath>D:/workspace/SkyXIL/XIL/Assets/Plugins/Entitas/Entitas/Entitas.CodeGeneration.Attributes.dll</HintPath>
+    </Reference>
+    <Reference Include="Entitas">
+      <HintPath>D:/workspace/SkyXIL/XIL/Assets/Plugins/Entitas/Entitas/Entitas.dll</HintPath>
+    </Reference>
+    <Reference Include="Entitas.Unity">
+      <HintPath>D:/workspace/SkyXIL/XIL/Assets/Plugins/Entitas/Entitas/Entitas.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Entitas.VisualDebugging.Unity">
+      <HintPath>D:/workspace/SkyXIL/XIL/Assets/Plugins/Entitas/Entitas/Entitas.VisualDebugging.Unity.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>D:/workspace/SkyXIL/XIL/Library/PackageCache/com.unity.analytics@3.0.9/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
@@ -642,6 +723,12 @@
     <Reference Include="Boo.Lang">
       <HintPath>D:/Apps/Unity 2018.3.0b9/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/Boo.Lang.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{D6906025-83A1-F053-C27C-A1E5538C4819}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

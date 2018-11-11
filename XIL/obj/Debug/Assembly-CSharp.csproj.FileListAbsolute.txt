@@ -175,3 +175,16 @@ D:\workspace\SkyXIL\XIL\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
 D:\workspace\SkyXIL\XIL\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 D:\workspace\SkyXIL\XIL\obj\Debug\Assembly-CSharp.dll
 D:\workspace\SkyXIL\XIL\obj\Debug\Assembly-CSharp.pdb
+D:\workspace\SkyXIL\XIL\Temp\bin\Debug\DesperateDevs.Logging.dll
+D:\workspace\SkyXIL\XIL\Temp\bin\Debug\DesperateDevs.Networking.dll
+D:\workspace\SkyXIL\XIL\Temp\bin\Debug\DesperateDevs.Serialization.dll
+D:\workspace\SkyXIL\XIL\Temp\bin\Debug\DesperateDevs.Utils.dll
+D:\workspace\SkyXIL\XIL\Temp\bin\Debug\Entitas.CodeGeneration.Attributes.dll
+D:\workspace\SkyXIL\XIL\Temp\bin\Debug\Entitas.dll
+D:\workspace\SkyXIL\XIL\Temp\bin\Debug\Entitas.Unity.dll
+D:\workspace\SkyXIL\XIL\Temp\bin\Debug\Entitas.VisualDebugging.Unity.dll
+D:\workspace\SkyXIL\XIL\Temp\bin\Debug\Pathfinding.ClipperLib.dll
+D:\workspace\SkyXIL\XIL\Temp\bin\Debug\Pathfinding.Ionic.Zip.Reduced.dll
+D:\workspace\SkyXIL\XIL\Temp\bin\Debug\Pathfinding.Poly2Tri.dll
+D:\workspace\SkyXIL\XIL\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+D:\workspace\SkyXIL\XIL\Temp\bin\Debug\Entitas.xml
