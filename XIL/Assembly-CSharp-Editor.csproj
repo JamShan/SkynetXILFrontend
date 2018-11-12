@@ -401,6 +401,9 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>D:/workspace/SkyXIL/XIL/Assets/Plugins/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="log4net">
+      <HintPath>D:/workspace/SkyXIL/XIL/Assets/Plugins/Log4Net/log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>D:/workspace/SkyXIL/XIL/Assets/XIL/Scripts/ILHotfix/Editor/Mono.Cecil.dll</HintPath>
     </Reference>
