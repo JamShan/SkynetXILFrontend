@@ -13,3 +13,18 @@ MonoBehaviour:
   m_Name: Game Data Setup
   m_EditorClassIdentifier: 
   player: {fileID: 1078277298200060, guid: e019075ae078e374d8f1b68ea30c1b95, type: 3}
+  laser: {fileID: 1038774032561826, guid: 53c6f456be7bf4d48a0b8b663f0be577, type: 3}
+  rotationSpeed: 180
+  playerMovementSpeed: 5
+  laserSpeed: 10
+  asteroidSpeed: 0.3
+  bigs:
+  - {fileID: 1957224159815514, guid: 09e9db56726a61242a28239ad5bd43c9, type: 3}
+  - {fileID: 1031113073527102, guid: e27dc13547343084eaeccc74024c83c3, type: 3}
+  meds:
+  - {fileID: 1044182829151724, guid: 5b79ca4ec19b8724bb93ae2d8ca7d683, type: 3}
+  - {fileID: 1762256216149456, guid: d82cccf8c4c7e1f4598ebd0929fb74fb, type: 3}
+  smalls:
+  - {fileID: 1671663795122602, guid: a4b50c304b2416c4e80728c218c08a2d, type: 3}
+  tinys:
+  - {fileID: 1510815341487064, guid: d40cd50f738aa7a43b848265536eb9b4, type: 3}
