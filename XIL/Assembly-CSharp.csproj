@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>4</LangVersion>
@@ -61,9 +61,52 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Sources\Generated\Game\Components\GamePlayerComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameInputComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameGameDataSetupComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameAccelerationComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameAsteroidComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameCollisionComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameDestroyedComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameInitialPositionComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameLaserComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameResourceComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameViewComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\Components\InputLoginCMDComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Components\GameDataSetupComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameComponentsLookup.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\InputComponentsLookup.cs" />
+    <Compile Include="Assets\Sources\Generated\GameState\GameStateComponentsLookup.cs" />
+    <Compile Include="Assets\Sources\Generated\Events\EventsComponentsLookup.cs" />
+    <Compile Include="Assets\Sources\Generated\Simulate\SimulateComponentsLookup.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameAttribute.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\InputAttribute.cs" />
+    <Compile Include="Assets\Sources\Generated\GameState\GameStateAttribute.cs" />
+    <Compile Include="Assets\Sources\Generated\Events\EventsAttribute.cs" />
+    <Compile Include="Assets\Sources\Generated\Simulate\SimulateAttribute.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameContext.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\InputContext.cs" />
+    <Compile Include="Assets\Sources\Generated\GameState\GameStateContext.cs" />
+    <Compile Include="Assets\Sources\Generated\Events\EventsContext.cs" />
+    <Compile Include="Assets\Sources\Generated\Simulate\SimulateContext.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameMatcher.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\InputMatcher.cs" />
+    <Compile Include="Assets\Sources\Generated\GameState\GameStateMatcher.cs" />
+    <Compile Include="Assets\Sources\Generated\Events\EventsMatcher.cs" />
+    <Compile Include="Assets\Sources\Generated\Simulate\SimulateMatcher.cs" />
+    <Compile Include="Assets\Sources\Generated\Contexts.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameEntity.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\InputEntity.cs" />
+    <Compile Include="Assets\Sources\Generated\GameState\GameStateEntity.cs" />
+    <Compile Include="Assets\Sources\Generated\Events\EventsEntity.cs" />
+    <Compile Include="Assets\Sources\Generated\Simulate\SimulateEntity.cs" />
+    <Compile Include="Assets\Sources\Generated\Feature.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\HotScripts\MonoSerialTest.cs" />
     <Compile Include="Assets\HotScripts\TestSer.cs" />
     <Compile Include="Assets\Scripts\Controllers\GameController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\InputController.cs" />
     <Compile Include="Assets\Scripts\Demos\HelloWorld.cs" />
     <Compile Include="Assets\Sources\Components\Game\AccelerationComponent.cs" />
     <Compile Include="Assets\Sources\Components\Game\AsteroidComponent.cs" />
@@ -74,50 +117,14 @@
     <Compile Include="Assets\Sources\Components\Game\PlayerComponent.cs" />
     <Compile Include="Assets\Sources\Components\Game\ResourceComponent.cs" />
     <Compile Include="Assets\Sources\Components\Game\ViewComponent.cs" />
+    <Compile Include="Assets\Sources\Components\Input\LoginCMD.cs" />
     <Compile Include="Assets\Sources\Components\Unique\Game\GameDataSetup.cs" />
     <Compile Include="Assets\Sources\Components\Unique\Game\InputComponent.cs" />
     <Compile Include="Assets\Sources\Data\Game\EmitTriggerEntityBehaviour.cs" />
-    <Compile Include="Assets\Sources\Generated\Components\GameDataSetupComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Contexts.cs" />
-    <Compile Include="Assets\Sources\Generated\Events\EventsAttribute.cs" />
-    <Compile Include="Assets\Sources\Generated\Events\EventsComponentsLookup.cs" />
-    <Compile Include="Assets\Sources\Generated\Events\EventsContext.cs" />
-    <Compile Include="Assets\Sources\Generated\Events\EventsEntity.cs" />
-    <Compile Include="Assets\Sources\Generated\Events\EventsMatcher.cs" />
-    <Compile Include="Assets\Sources\Generated\Feature.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\Components\GameAccelerationComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\Components\GameAsteroidComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\Components\GameCollisionComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\Components\GameDestroyedComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\Components\GameGameDataSetupComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\Components\GameInitialPositionComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\Components\GameInputComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\Components\GameLaserComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\Components\GamePlayerComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\Components\GameResourceComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\Components\GameViewComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\GameAttribute.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\GameComponentsLookup.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\GameContext.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\GameEntity.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\GameMatcher.cs" />
-    <Compile Include="Assets\Sources\Generated\GameState\GameStateAttribute.cs" />
-    <Compile Include="Assets\Sources\Generated\GameState\GameStateComponentsLookup.cs" />
-    <Compile Include="Assets\Sources\Generated\GameState\GameStateContext.cs" />
-    <Compile Include="Assets\Sources\Generated\GameState\GameStateEntity.cs" />
-    <Compile Include="Assets\Sources\Generated\GameState\GameStateMatcher.cs" />
-    <Compile Include="Assets\Sources\Generated\Input\InputAttribute.cs" />
-    <Compile Include="Assets\Sources\Generated\Input\InputComponentsLookup.cs" />
-    <Compile Include="Assets\Sources\Generated\Input\InputContext.cs" />
-    <Compile Include="Assets\Sources\Generated\Input\InputEntity.cs" />
-    <Compile Include="Assets\Sources\Generated\Input\InputMatcher.cs" />
-    <Compile Include="Assets\Sources\Generated\Simulate\SimulateAttribute.cs" />
-    <Compile Include="Assets\Sources\Generated\Simulate\SimulateComponentsLookup.cs" />
-    <Compile Include="Assets\Sources\Generated\Simulate\SimulateContext.cs" />
-    <Compile Include="Assets\Sources\Generated\Simulate\SimulateEntity.cs" />
-    <Compile Include="Assets\Sources\Generated\Simulate\SimulateMatcher.cs" />
     <Compile Include="Assets\Sources\Services\Game\GameEntityService.cs" />
     <Compile Include="Assets\Sources\Services\Game\GameServices.cs" />
+    <Compile Include="Assets\Sources\Services\Input\InputLoginService.cs" />
+    <Compile Include="Assets\Sources\Services\Input\InputServices.cs" />
     <Compile Include="Assets\Sources\Systems\Game\GameSystems.cs" />
     <Compile Include="Assets\Sources\Systems\Game\Systems\DestroyEntitySystem.cs" />
     <Compile Include="Assets\Sources\Systems\Game\Systems\HitAsteroidSystem.cs" />
@@ -131,6 +138,9 @@
     <Compile Include="Assets\Sources\Systems\Game\Systems\RotateLaserSystem.cs" />
     <Compile Include="Assets\Sources\Systems\Game\Systems\RotatePlayerSystem.cs" />
     <Compile Include="Assets\Sources\Systems\Game\Systems\ShootSystem.cs" />
+    <Compile Include="Assets\Sources\Systems\Input\InputSystems.cs" />
+    <Compile Include="Assets\Sources\Systems\Input\Systems\InitializeLoginCMDSystem.cs" />
+    <Compile Include="Assets\Sources\Systems\Input\Systems\LoginCMDSystem.cs" />
     <Compile Include="Assets\XIL\Auto\CLRBindings.cs" />
     <Compile Include="Assets\XIL\Auto\GenDelegateBridge_pc.cs" />
     <Compile Include="Assets\XIL\Auto\GenObjects_pc.cs" />
@@ -453,19 +463,19 @@
     <None Include="Assets\Resources\logConfig.txt" />
     <None Include="Assets\mcs.rsp" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/workspace/SkyXIL/XIL/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Android.Editor">
-      <HintPath>D:/workspace/SkyXIL/XIL/Library/ScriptAssemblies/Unity.Analytics.Android.Editor.dll</HintPath>
+      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Library/ScriptAssemblies/Unity.Analytics.Android.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/workspace/SkyXIL/XIL/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/workspace/SkyXIL/XIL/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/workspace/SkyXIL/XIL/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Apps/Unity 2018.3.0b9/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -669,52 +679,52 @@
       <HintPath>D:/Apps/Unity 2018.3.0b9/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Pathfinding.Ionic.Zip.Reduced">
-      <HintPath>D:/workspace/SkyXIL/XIL/Assets/Plugins/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="DesperateDevs.Logging">
-      <HintPath>D:/workspace/SkyXIL/XIL/Assets/Plugins/Entitas/DesperateDevs/DesperateDevs.Logging.dll</HintPath>
+      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/Entitas/DesperateDevs/DesperateDevs.Logging.dll</HintPath>
     </Reference>
     <Reference Include="DesperateDevs.Networking">
-      <HintPath>D:/workspace/SkyXIL/XIL/Assets/Plugins/Entitas/DesperateDevs/DesperateDevs.Networking.dll</HintPath>
+      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/Entitas/DesperateDevs/DesperateDevs.Networking.dll</HintPath>
     </Reference>
     <Reference Include="DesperateDevs.Serialization">
-      <HintPath>D:/workspace/SkyXIL/XIL/Assets/Plugins/Entitas/DesperateDevs/DesperateDevs.Serialization.dll</HintPath>
+      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/Entitas/DesperateDevs/DesperateDevs.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="DesperateDevs.Utils">
-      <HintPath>D:/workspace/SkyXIL/XIL/Assets/Plugins/Entitas/DesperateDevs/DesperateDevs.Utils.dll</HintPath>
+      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/Entitas/DesperateDevs/DesperateDevs.Utils.dll</HintPath>
     </Reference>
     <Reference Include="Entitas.CodeGeneration.Attributes">
-      <HintPath>D:/workspace/SkyXIL/XIL/Assets/Plugins/Entitas/Entitas/Entitas.CodeGeneration.Attributes.dll</HintPath>
+      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/Entitas/Entitas/Entitas.CodeGeneration.Attributes.dll</HintPath>
     </Reference>
     <Reference Include="Entitas">
-      <HintPath>D:/workspace/SkyXIL/XIL/Assets/Plugins/Entitas/Entitas/Entitas.dll</HintPath>
+      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/Entitas/Entitas/Entitas.dll</HintPath>
     </Reference>
     <Reference Include="Entitas.Unity">
-      <HintPath>D:/workspace/SkyXIL/XIL/Assets/Plugins/Entitas/Entitas/Entitas.Unity.dll</HintPath>
+      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/Entitas/Entitas/Entitas.Unity.dll</HintPath>
     </Reference>
     <Reference Include="Entitas.VisualDebugging.Unity">
-      <HintPath>D:/workspace/SkyXIL/XIL/Assets/Plugins/Entitas/Entitas/Entitas.VisualDebugging.Unity.dll</HintPath>
+      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/Entitas/Entitas/Entitas.VisualDebugging.Unity.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>D:/workspace/SkyXIL/XIL/Assets/Plugins/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
+      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="log4net">
-      <HintPath>D:/workspace/SkyXIL/XIL/Assets/Plugins/Log4Net/log4net.dll</HintPath>
+      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/Log4Net/log4net.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>D:/workspace/SkyXIL/XIL/Library/PackageCache/com.unity.analytics@3.0.9/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Library/PackageCache/com.unity.analytics@3.0.9/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>D:/workspace/SkyXIL/XIL/Library/PackageCache/com.unity.analytics@3.0.9/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Library/PackageCache/com.unity.analytics@3.0.9/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>D:/workspace/SkyXIL/XIL/Library/PackageCache/com.unity.analytics@3.0.9/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Library/PackageCache/com.unity.analytics@3.0.9/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics">
-      <HintPath>D:/workspace/SkyXIL/XIL/Library/PackageCache/com.unity.analytics@3.0.9/Android/Unity.Analytics.dll</HintPath>
+      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Library/PackageCache/com.unity.analytics@3.0.9/Android/Unity.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Purchasing">
-      <HintPath>D:/workspace/SkyXIL/XIL/Library/PackageCache/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll</HintPath>
+      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Library/PackageCache/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:/Apps/Unity 2018.3.0b9/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>

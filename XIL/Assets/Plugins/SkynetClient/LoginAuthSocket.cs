@@ -12,11 +12,11 @@ namespace SkynetClient
 {
     public class AuthPackage
     {
-        public string openId = "";
-        public string sdk = "";
-        public string server = "";
-        public string pf = "";
-        public string userData = "";
+        public string openId = "1";
+        public string sdk = "2";
+        public string serverId = "1";
+        public string pf = "1";
+        public string userData = "userData";
     }
 
     public enum Enum_Login_Auth_State: int
@@ -28,6 +28,9 @@ namespace SkynetClient
         LOGIN_RESULT,
         LOGIN_FINISHED,
     }
+
+    public delegate void LoginAuthResultFun(int code);
+
 
     public class LoginAuthSocket
     {
@@ -51,14 +54,16 @@ namespace SkynetClient
         private int port;
 
         private Enum_Login_Auth_State state = Enum_Login_Auth_State.NIL;
+        private LoginAuthResultFun cb = null;
 
         public LoginAuthSocket()
         {
         }
 
-        public void Init(AuthPackage auth_package)
+        public void Init(AuthPackage auth_package, LoginAuthResultFun cb)
         {
             this.auth_package = auth_package;
+            this.cb = cb;
         }
 
         public void Connect(string host, int port, int overtime)
@@ -274,7 +279,7 @@ namespace SkynetClient
         public byte[] secret;
         public string game_ip;
         public string game_port;
-        public string uid;
+        public string useid;
         public string subid;
 
         void GetChallenge(string socketline)
@@ -329,19 +334,23 @@ namespace SkynetClient
             ByteStream buffer = new ByteStream(UTF8Encoding.UTF8.GetBytes(200 + " " + resultString));
             if (code != 200)
             {
-                Debug.Log( "Login Result" + resultString);
-                return;
+                Debug.LogError( "Login Result" + resultString);
+            }
+            else
+            {
+                Debug.Log("OnLoginResult :" + resultString);
+
+                Regex reg = new Regex(@"([^:]+):([^:]+)@([^@]+)@(.+)");
+                string[] splites = Regex.Split(resultString, "[':', '@']");
+                //ip, port, uid, subid
+                game_ip = splites[0];
+                game_port = splites[1];
+                useid = splites[2];
+                subid = splites[3];
             }
 
-            Regex reg = new Regex(@"([^:]+):([^:]+)@([^@]+)@(.+)");
-            string[] splites = Regex.Split(resultString, "[':', '@']");
-            //ip, port, uid, subid
-            game_ip = splites[0];
-            game_port = splites[1];
-            uid = splites[2];
-            subid = splites[3];
-
             this.state = Enum_Login_Auth_State.LOGIN_FINISHED;
+            this.cb(code);
         }
 
         void WriteMessage(byte[] message)
@@ -407,9 +416,9 @@ namespace SkynetClient
 
         string EncodeToken()
         {
-            return string.Format("{0}@{1}:{2}:{3}:{4}", Crypt.Base64Decode(this.auth_package.openId), 
+            return string.Format("{0}@{1}@{2}@{3}@{4}", Crypt.Base64Decode(this.auth_package.openId), 
                         Crypt.Base64Decode(this.auth_package.sdk),
-                       Crypt.Base64Decode(this.auth_package.server),
+                       Crypt.Base64Decode(this.auth_package.serverId),
                        Crypt.Base64Decode(this.auth_package.pf),
                        Crypt.Base64Decode(this.auth_package.userData));
         }

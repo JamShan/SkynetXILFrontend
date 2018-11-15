@@ -6,7 +6,7 @@ namespace SkynetClient
     public class HandShakePackage
     {
         public string secret = ""; //login get secret
-        public string uid = "";
+        public string useid = "";
     }
 
     public class GameTCPSocket
