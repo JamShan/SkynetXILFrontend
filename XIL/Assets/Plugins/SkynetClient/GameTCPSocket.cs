@@ -5,11 +5,8 @@ namespace SkynetClient
 {
     public class HandShakePackage
     {
-        public string openId = "";
-        public int sdk = 0;
-        public int worldId = 1;
-        public int pf = 1;
-        public string userData = "";
+        public string secret = ""; //login get secret
+        public string uid = "";
     }
 
     public class GameTCPSocket
@@ -38,11 +35,19 @@ namespace SkynetClient
 
         //NetSender.Send<Protocol.Handshake>(req, (_) =>
         //{
-	       // SprotoType.Handshake.response rsp = _ as SprotoType.Handshake.response;
-	       // if (rsp.result == 0)
-	       // {
-	       // }
+        // SprotoType.Handshake.response rsp = _ as SprotoType.Handshake.response;
+        // if (rsp.result == 0)
+        // {
+        // }
         //});
+
+        //SprotoTypeBase HeartbeatRsp(SprotoTypeBase _)
+        //{
+        //    SprotoType.Heartbeat.request req = _ as SprotoType.Heartbeat.request;
+        //    return null; // can return a response
+        //}
+
+        //NetReceiver.AddHandler<Protocol.Heartbeat>(HeartbeatRsp);
 
         public  void Send<T>(SprotoTypeBase rpcReq = null, RpcRspHandler rpcRspHandler = null)
         {

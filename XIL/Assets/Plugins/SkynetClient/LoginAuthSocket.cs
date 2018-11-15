@@ -13,9 +13,9 @@ namespace SkynetClient
     public class AuthPackage
     {
         public string openId = "";
-        public int sdk = 0;
-        public int worldId = 1;
-        public int pf = 1;
+        public string sdk = "";
+        public string server = "";
+        public string pf = "";
         public string userData = "";
     }
 
@@ -408,9 +408,9 @@ namespace SkynetClient
         string EncodeToken()
         {
             return string.Format("{0}@{1}:{2}:{3}:{4}", Crypt.Base64Decode(this.auth_package.openId), 
-                        Crypt.Base64Decode(this.auth_package.sdk.ToString()),
-                       Crypt.Base64Decode(this.auth_package.worldId.ToString()),
-                       Crypt.Base64Decode(this.auth_package.pf.ToString()),
+                        Crypt.Base64Decode(this.auth_package.sdk),
+                       Crypt.Base64Decode(this.auth_package.server),
+                       Crypt.Base64Decode(this.auth_package.pf),
                        Crypt.Base64Decode(this.auth_package.userData));
         }
 
