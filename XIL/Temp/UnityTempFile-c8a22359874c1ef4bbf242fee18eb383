@@ -1,0 +1,601 @@
+-debug
+-target:library
+-nowarn:0169
+-langversion:4
+-out:Temp/Assembly-CSharp.dll
+-nostdlib
+-r:Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.AccessibilityModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.AnimationModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.AssetBundleModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.AudioModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.BaselibModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.ClothModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterInputModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.CoreModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.CrashReportingModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.DirectorModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.GameCenterModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.GridModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.HotReloadModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.IMGUIModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.ImageConversionModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.InputModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.LocalizationModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.PhysicsModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.Physics2DModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.ProfilerModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.StreamingModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.SubstanceModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.TLSModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.TerrainModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.TextCoreModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.TextRenderingModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.TilemapModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.TimelineModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.UIModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.UIElementsModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.UNETModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.UmbraModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.UnityConnectModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.VFXModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.VRModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.VehiclesModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.VideoModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.WindModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEngine/UnityEngine.XRModule.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/UnityEditor.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\Managed/Unity.Locator.dll"
+-r:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+-r:Library/ScriptAssemblies/Unity.Analytics.Android.Editor.dll
+-r:Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll
+-r:Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+-r:Library/ScriptAssemblies/Unity.TextMeshPro.dll
+-r:"D:/Apps/Unity 2018.3.0b9/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+-r:"D:/Apps/Unity 2018.3.0b9/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll"
+-r:"D:/Apps/Unity 2018.3.0b9/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:"D:/Apps/Unity 2018.3.0b9/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll"
+-r:"D:/Apps/Unity 2018.3.0b9/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll"
+-r:Assets/Plugins/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll
+-r:Assets/Plugins/Entitas/DesperateDevs/DesperateDevs.Logging.dll
+-r:Assets/Plugins/Entitas/DesperateDevs/DesperateDevs.Networking.dll
+-r:Assets/Plugins/Entitas/DesperateDevs/DesperateDevs.Serialization.dll
+-r:Assets/Plugins/Entitas/DesperateDevs/DesperateDevs.Utils.dll
+-r:Assets/Plugins/Entitas/Entitas/Entitas.CodeGeneration.Attributes.dll
+-r:Assets/Plugins/Entitas/Entitas/Entitas.dll
+-r:Assets/Plugins/Entitas/Entitas/Entitas.Unity.dll
+-r:Assets/Plugins/Entitas/Entitas/Entitas.VisualDebugging.Unity.dll
+-r:Assets/Plugins/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll
+-r:Assets/Plugins/Log4Net/log4net.dll
+-r:D:/workspace/SkynetXILFrontend/XIL/Library/PackageCache/com.unity.analytics@3.0.9/Unity.Analytics.Editor.dll
+-r:D:/workspace/SkynetXILFrontend/XIL/Library/PackageCache/com.unity.analytics@3.0.9/Unity.Analytics.StandardEvents.dll
+-r:D:/workspace/SkynetXILFrontend/XIL/Library/PackageCache/com.unity.analytics@3.0.9/Unity.Analytics.Tracker.dll
+-r:D:/workspace/SkynetXILFrontend/XIL/Library/PackageCache/com.unity.analytics@3.0.9/Android/Unity.Analytics.dll
+-r:D:/workspace/SkynetXILFrontend/XIL/Library/PackageCache/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Runtime.Serialization.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.Linq.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\UnityScript.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\UnityScript.Lang.dll"
+-r:"D:\Apps\Unity 2018.3.0b9\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\Boo.Lang.dll"
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_4_OR_NEWER
+-define:UNITY_5_5_OR_NEWER
+-define:UNITY_5_6_OR_NEWER
+-define:UNITY_2017_1_OR_NEWER
+-define:UNITY_2017_2_OR_NEWER
+-define:UNITY_2017_3_OR_NEWER
+-define:UNITY_2017_4_OR_NEWER
+-define:UNITY_2018_1_OR_NEWER
+-define:UNITY_2018_2_OR_NEWER
+-define:UNITY_2018_3_OR_NEWER
+-define:UNITY_2018_3_0
+-define:UNITY_2018_3
+-define:UNITY_2018
+-define:PLATFORM_ARCH_64
+-define:UNITY_64
+-define:UNITY_INCLUDE_TESTS
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_DUCK_TYPING
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_SPRITES
+-define:ENABLE_GRID
+-define:ENABLE_TILEMAP
+-define:ENABLE_TERRAIN
+-define:ENABLE_TEXTURE_STREAMING
+-define:ENABLE_DIRECTOR
+-define:ENABLE_UNET
+-define:ENABLE_LZMA
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES_COLLAB
+-define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_HUB
+-define:ENABLE_EDITOR_HUB_LICENSE
+-define:ENABLE_WEBSOCKET_CLIENT
+-define:ENABLE_DIRECTOR_AUDIO
+-define:ENABLE_DIRECTOR_TEXTURE
+-define:ENABLE_TIMELINE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_EDITOR_METRICS_CACHING
+-define:ENABLE_MANAGED_JOBS
+-define:ENABLE_MANAGED_TRANSFORM_JOBS
+-define:ENABLE_MANAGED_ANIMATION_JOBS
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:ENABLE_MONO_BDWGC
+-define:PLATFORM_SUPPORTS_MONO
+-define:RENDER_SOFTWARE_CURSOR
+-define:INCLUDE_PUBNUB
+-define:ENABLE_VIDEO
+-define:ENABLE_CUSTOM_RENDER_TEXTURE
+-define:ENABLE_LOCALIZATION
+-define:PLATFORM_STANDALONE_WIN
+-define:PLATFORM_STANDALONE
+-define:UNITY_STANDALONE_WIN
+-define:UNITY_STANDALONE
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_MOVIES
+-define:ENABLE_NETWORK
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+-define:ENABLE_OUT_OF_PROCESS_CRASH_HANDLER
+-define:ENABLE_EVENT_QUEUE
+-define:ENABLE_CLUSTER_SYNC
+-define:ENABLE_CLUSTERINPUT
+-define:ENABLE_VR
+-define:ENABLE_AR
+-define:ENABLE_WEBSOCKET_HOST
+-define:ENABLE_MONO
+-define:NET_2_0
+-define:NET_LEGACY
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_WIN
+-define:ENABLE_UNITY_COLLECTIONS_CHECKS
+-define:ENABLE_BURST_AOT
+-define:UNITY_TEAM_LICENSE
+-define:USE_HOT
+-define:USE_PDB
+Assets/hotScripts/MonoSerialTest.cs
+Assets/hotScripts/TestSer.cs
+Assets/Scripts/Controllers/GameController.cs
+Assets/Scripts/Controllers/InputController.cs
+Assets/Scripts/Demos/HelloWorld.cs
+Assets/Sources/Components/Game/AccelerationComponent.cs
+Assets/Sources/Components/Game/AsteroidComponent.cs
+Assets/Sources/Components/Game/CollisionComponent.cs
+Assets/Sources/Components/Game/DestroyedComponent.cs
+Assets/Sources/Components/Game/InitialPositionComponent.cs
+Assets/Sources/Components/Game/LaserComponent.cs
+Assets/Sources/Components/Game/PlayerComponent.cs
+Assets/Sources/Components/Game/ResourceComponent.cs
+Assets/Sources/Components/Game/ViewComponent.cs
+Assets/Sources/Components/Input/LoginCMD.cs
+Assets/Sources/Components/Unique/Game/GameDataSetup.cs
+Assets/Sources/Components/Unique/Game/InputComponent.cs
+Assets/Sources/Data/Game/EmitTriggerEntityBehaviour.cs
+Assets/Sources/Generated/Components/GameDataSetupComponent.cs
+Assets/Sources/Generated/Contexts.cs
+Assets/Sources/Generated/Events/EventsAttribute.cs
+Assets/Sources/Generated/Events/EventsComponentsLookup.cs
+Assets/Sources/Generated/Events/EventsContext.cs
+Assets/Sources/Generated/Events/EventsEntity.cs
+Assets/Sources/Generated/Events/EventsMatcher.cs
+Assets/Sources/Generated/Feature.cs
+Assets/Sources/Generated/Game/Components/GameAccelerationComponent.cs
+Assets/Sources/Generated/Game/Components/GameAsteroidComponent.cs
+Assets/Sources/Generated/Game/Components/GameCollisionComponent.cs
+Assets/Sources/Generated/Game/Components/GameDestroyedComponent.cs
+Assets/Sources/Generated/Game/Components/GameGameDataSetupComponent.cs
+Assets/Sources/Generated/Game/Components/GameInitialPositionComponent.cs
+Assets/Sources/Generated/Game/Components/GameInputComponent.cs
+Assets/Sources/Generated/Game/Components/GameLaserComponent.cs
+Assets/Sources/Generated/Game/Components/GamePlayerComponent.cs
+Assets/Sources/Generated/Game/Components/GameResourceComponent.cs
+Assets/Sources/Generated/Game/Components/GameViewComponent.cs
+Assets/Sources/Generated/Game/GameAttribute.cs
+Assets/Sources/Generated/Game/GameComponentsLookup.cs
+Assets/Sources/Generated/Game/GameContext.cs
+Assets/Sources/Generated/Game/GameEntity.cs
+Assets/Sources/Generated/Game/GameMatcher.cs
+Assets/Sources/Generated/GameState/GameStateAttribute.cs
+Assets/Sources/Generated/GameState/GameStateComponentsLookup.cs
+Assets/Sources/Generated/GameState/GameStateContext.cs
+Assets/Sources/Generated/GameState/GameStateEntity.cs
+Assets/Sources/Generated/GameState/GameStateMatcher.cs
+Assets/Sources/Generated/Input/Components/InputLoginCMDComponent.cs
+Assets/Sources/Generated/Input/InputAttribute.cs
+Assets/Sources/Generated/Input/InputComponentsLookup.cs
+Assets/Sources/Generated/Input/InputContext.cs
+Assets/Sources/Generated/Input/InputEntity.cs
+Assets/Sources/Generated/Input/InputMatcher.cs
+Assets/Sources/Generated/Simulate/SimulateAttribute.cs
+Assets/Sources/Generated/Simulate/SimulateComponentsLookup.cs
+Assets/Sources/Generated/Simulate/SimulateContext.cs
+Assets/Sources/Generated/Simulate/SimulateEntity.cs
+Assets/Sources/Generated/Simulate/SimulateMatcher.cs
+Assets/Sources/Services/Game/GameEntityService.cs
+Assets/Sources/Services/Game/GameServices.cs
+Assets/Sources/Services/Input/InputLoginService.cs
+Assets/Sources/Services/Input/InputServices.cs
+Assets/Sources/Systems/Game/GameSystems.cs
+Assets/Sources/Systems/Game/Systems/DestroyEntitySystem.cs
+Assets/Sources/Systems/Game/Systems/HitAsteroidSystem.cs
+Assets/Sources/Systems/Game/Systems/InitializeAsteroidsSystem.cs
+Assets/Sources/Systems/Game/Systems/InitializePlayerSystem.cs
+Assets/Sources/Systems/Game/Systems/InputSystem.cs
+Assets/Sources/Systems/Game/Systems/InstantiateViewSystem.cs
+Assets/Sources/Systems/Game/Systems/MapAsteroidLevelToResourceSystem.cs
+Assets/Sources/Systems/Game/Systems/MoveSystem.cs
+Assets/Sources/Systems/Game/Systems/ReplaceAccelerationSystem.cs
+Assets/Sources/Systems/Game/Systems/RotateLaserSystem.cs
+Assets/Sources/Systems/Game/Systems/RotatePlayerSystem.cs
+Assets/Sources/Systems/Game/Systems/ShootSystem.cs
+Assets/Sources/Systems/Input/InputSystems.cs
+Assets/Sources/Systems/Input/Systems/LoginCMDSystem.cs
+Assets/XIL/Auto/CLRBindings.cs
+Assets/XIL/Auto/GenDelegateBridge_pc.cs
+Assets/XIL/Auto/GenObjects_pc.cs
+Assets/XIL/Auto/ILRegType_pc.cs
+Assets/XIL/Auto/ILRuntime_Runtime_Intepreter_ILTypeInstance_Binding.cs
+Assets/XIL/Auto/System_Array_Binding.cs
+Assets/XIL/Auto/System_Collections_Generic_Dictionary_2_ILTypeInstance_ILTypeInstance_Binding.cs
+Assets/XIL/Auto/System_Collections_Generic_Dictionary_2_Int32_ILTypeInstance_Binding.cs
+Assets/XIL/Auto/System_Collections_Generic_Dictionary_2_Int64_ILTypeInstance_Binding.cs
+Assets/XIL/Auto/System_Collections_Generic_Dictionary_2_String_ILTypeInstance_Binding.cs
+Assets/XIL/Auto/System_Collections_Generic_Dictionary_2_UInt32_ILTypeInstance_Binding.cs
+Assets/XIL/Auto/System_Collections_Generic_Dictionary_2_UInt64_ILTypeInstance_Binding.cs
+Assets/XIL/Auto/System_Collections_Generic_HashSet_1_Int32_Binding.cs
+Assets/XIL/Auto/System_Collections_Generic_HashSet_1_Int64_Binding.cs
+Assets/XIL/Auto/System_Collections_Generic_HashSet_1_String_Binding.cs
+Assets/XIL/Auto/System_Collections_Generic_List_1_ILTypeInstance_Binding.cs
+Assets/XIL/Auto/System_Convert_Binding.cs
+Assets/XIL/Auto/System_DateTime_Binding.cs
+Assets/XIL/Auto/System_Enum_Binding.cs
+Assets/XIL/Auto/System_Int32_Binding.cs
+Assets/XIL/Auto/System_Int64_Binding.cs
+Assets/XIL/Auto/System_Linq_Enumerable_Binding.cs
+Assets/XIL/Auto/System_Math_Binding.cs
+Assets/XIL/Auto/System_Object_Binding.cs
+Assets/XIL/Auto/System_Reflection_FieldInfo_Binding.cs
+Assets/XIL/Auto/System_Reflection_MethodInfo_Binding.cs
+Assets/XIL/Auto/System_Reflection_PropertyInfo_Binding.cs
+Assets/XIL/Auto/System_Single_Binding.cs
+Assets/XIL/Auto/System_String_Binding.cs
+Assets/XIL/Auto/System_Text_RegularExpressions_CaptureCollection_Binding.cs
+Assets/XIL/Auto/System_Text_RegularExpressions_Group_Binding.cs
+Assets/XIL/Auto/System_Text_RegularExpressions_GroupCollection_Binding.cs
+Assets/XIL/Auto/System_Text_RegularExpressions_Match_Binding.cs
+Assets/XIL/Auto/System_Text_RegularExpressions_Regex_Binding.cs
+Assets/XIL/Auto/System_Text_StringBuilder_Binding.cs
+Assets/XIL/Auto/System_TimeSpan_Binding.cs
+Assets/XIL/Auto/System_Type_Binding.cs
+Assets/XIL/Auto/UnityEngine_AssetBundle_Binding.cs
+Assets/XIL/Auto/UnityEngine_Camera_Binding.cs
+Assets/XIL/Auto/UnityEngine_Canvas_Binding.cs
+Assets/XIL/Auto/UnityEngine_Color_Binding.cs
+Assets/XIL/Auto/UnityEngine_EventSystems_UIBehaviour_Binding.cs
+Assets/XIL/Auto/UnityEngine_GameObject_Binding.cs
+Assets/XIL/Auto/UnityEngine_Matrix4x4_Binding.cs
+Assets/XIL/Auto/UnityEngine_MonoBehaviour_Binding.cs
+Assets/XIL/Auto/UnityEngine_Object_Binding.cs
+Assets/XIL/Auto/UnityEngine_Quaternion_Binding.cs
+Assets/XIL/Auto/UnityEngine_RectTransform_Binding.cs
+Assets/XIL/Auto/UnityEngine_Resources_Binding.cs
+Assets/XIL/Auto/UnityEngine_Screen_Binding.cs
+Assets/XIL/Auto/UnityEngine_SystemInfo_Binding.cs
+Assets/XIL/Auto/UnityEngine_Texture_Binding.cs
+Assets/XIL/Auto/UnityEngine_Texture2D_Binding.cs
+Assets/XIL/Auto/UnityEngine_Time_Binding.cs
+Assets/XIL/Auto/UnityEngine_Transform_Binding.cs
+Assets/XIL/Auto/UnityEngine_UI_Graphic_Binding.cs
+Assets/XIL/Auto/UnityEngine_UI_Image_Binding.cs
+Assets/XIL/Auto/UnityEngine_UI_LayoutElement_Binding.cs
+Assets/XIL/Auto/UnityEngine_UI_Text_Binding.cs
+Assets/XIL/Auto/UnityEngine_Vector2_Binding.cs
+Assets/XIL/Auto/UnityEngine_Vector3_Binding.cs
+Assets/XIL/Auto/UnityEngine_Video_VideoPlayer_Binding.cs
+Assets/XIL/Auto/wxb_Hotfix_Binding.cs
+Assets/XIL/Auto/wxb_hotMgr_Binding.cs
+Assets/XIL/Auto/wxb_IL_Help_Binding.cs
+Assets/XIL/Auto/wxb_RefType_Binding.cs
+Assets/XIL/ILSource/ILRuntime/CLR/Method/CLRMethod.cs
+Assets/XIL/ILSource/ILRuntime/CLR/Method/ExceptionHandler.cs
+Assets/XIL/ILSource/ILRuntime/CLR/Method/ILMethod.cs
+Assets/XIL/ILSource/ILRuntime/CLR/Method/IMethod.cs
+Assets/XIL/ILSource/ILRuntime/CLR/TypeSystem/CLRType.cs
+Assets/XIL/ILSource/ILRuntime/CLR/TypeSystem/ILGenericParameterType.cs
+Assets/XIL/ILSource/ILRuntime/CLR/TypeSystem/ILType.cs
+Assets/XIL/ILSource/ILRuntime/CLR/TypeSystem/IType.cs
+Assets/XIL/ILSource/ILRuntime/CLR/Utils/Extensions.cs
+Assets/XIL/ILSource/ILRuntime/EditorClass.cs
+Assets/XIL/ILSource/ILRuntime/Other/ByReferenceKeyComparer.cs
+Assets/XIL/ILSource/ILRuntime/Other/DelegateExportAttribute.cs
+Assets/XIL/ILSource/ILRuntime/Other/NeedAdaptorAttribute.cs
+Assets/XIL/ILSource/ILRuntime/Other/ThreadSafeDictionary.cs
+Assets/XIL/ILSource/ILRuntime/Other/UncheckedList.cs
+Assets/XIL/ILSource/ILRuntime/Reflection/Extensions.cs
+Assets/XIL/ILSource/ILRuntime/Reflection/ILRuntimeConstructorInfo.cs
+Assets/XIL/ILSource/ILRuntime/Reflection/ILRuntimeFieldInfo.cs
+Assets/XIL/ILSource/ILRuntime/Reflection/ILRuntimeMethodInfo.cs
+Assets/XIL/ILSource/ILRuntime/Reflection/ILRuntimeParameterInfo.cs
+Assets/XIL/ILSource/ILRuntime/Reflection/ILRuntimePropertyInfo.cs
+Assets/XIL/ILSource/ILRuntime/Reflection/ILRuntimeType.cs
+Assets/XIL/ILSource/ILRuntime/Reflection/ILRuntimeWrapperType.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Adaptors/CLRCrossBindingAdaptors.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/CLRBinding/BindingCodeGenerator.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/CLRBinding/BindingGeneratorExtensions.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/CLRBinding/CommonBindingGenerator.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/CLRBinding/ConstructorBindingGenerator.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/CLRBinding/FieldBindingGenerator.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/CLRBinding/MethodBindingGenerator.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/CLRBinding/ValueTypeBindingGenerator.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Debugger/BreakPointContext.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Debugger/BreakpointInfo.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Debugger/DebuggerServer/DebuggerServer.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Debugger/DebugMessageType.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Debugger/DebugService.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Debugger/DebugSocket.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Debugger/Protocol/CSBindBreakpoint.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Debugger/Protocol/CSDeleteBreakpoint.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Debugger/Protocol/CSEnumChildren.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Debugger/Protocol/CSExecute.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Debugger/Protocol/CSResolveIndexer.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Debugger/Protocol/CSResolveVariable.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Debugger/Protocol/CSStep.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Debugger/Protocol/SCAttachResult.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Debugger/Protocol/SCBindBreakpointResult.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Debugger/Protocol/SCBreakpointHit.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Debugger/Protocol/SCEnumChildrenResult.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Debugger/Protocol/SCModuleLoaded.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Debugger/Protocol/SCResolveVariableResult.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Debugger/Protocol/SCStepComplete.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Debugger/Protocol/SCThreadStarted.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Debugger/StackFrameInfo.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Debugger/StepTypes.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Debugger/VariableInfo.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Enviorment/AppDomain.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Enviorment/CLRRedirections.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Enviorment/CrossBindingAdaptor.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Enviorment/DelegateManager.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Enviorment/InvocationContext.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Enviorment/ValueTypeBinder.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Extensions.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Intepreter/DelegateAdapter.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Intepreter/ILIntepreter.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Intepreter/ILRuntimeException.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Intepreter/ILTypeInstance.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Intepreter/OpCodes/OpCode.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Intepreter/OpCodes/OpCodeEnum.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Stack/RuntimeStack.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Stack/StackFrame.cs
+Assets/XIL/ILSource/ILRuntime/Runtime/Stack/StackObject.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Cil/Code.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Cil/CodeReader.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Cil/CodeWriter.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Cil/Document.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Cil/ExceptionHandler.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Cil/ILProcessor.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Cil/Instruction.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Cil/MethodBody.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Cil/OpCode.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Cil/OpCodes.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Cil/SequencePoint.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Cil/Symbols.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Cil/VariableDefinition.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Cil/VariableReference.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Metadata/BlobHeap.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Metadata/Buffers.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Metadata/CodedIndex.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Metadata/ElementType.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Metadata/GuidHeap.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Metadata/Heap.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Metadata/MetadataToken.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Metadata/Row.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Metadata/StringHeap.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Metadata/TableHeap.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Metadata/TokenType.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Metadata/UserStringHeap.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.Metadata/Utilities.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.PE/BinaryStreamReader.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.PE/BinaryStreamWriter.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.PE/ByteBuffer.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.PE/ByteBufferEqualityComparer.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.PE/DataDirectory.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.PE/Image.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.PE/ImageReader.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.PE/ImageWriter.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.PE/Section.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil.PE/TextMap.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/ArrayType.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/AssemblyDefinition.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/AssemblyFlags.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/AssemblyHashAlgorithm.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/AssemblyLinkedResource.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/AssemblyNameDefinition.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/AssemblyNameReference.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/AssemblyReader.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/AssemblyWriter.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/BaseAssemblyResolver.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/CallSite.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/CustomAttribute.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/DefaultAssemblyResolver.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/EmbeddedResource.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/EventAttributes.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/EventDefinition.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/EventReference.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/ExportedType.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/FieldAttributes.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/FieldDefinition.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/FieldReference.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/FileAttributes.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/FunctionPointerType.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/GenericInstanceMethod.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/GenericInstanceType.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/GenericParameter.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/GenericParameterAttributes.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/IConstantProvider.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/ICustomAttributeProvider.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/IGenericInstance.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/IGenericParameterProvider.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/IMarshalInfoProvider.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/IMemberDefinition.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/IMetadataScope.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/IMetadataTokenProvider.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/IMethodSignature.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/Import.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/LinkedResource.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/ManifestResourceAttributes.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/MarshalInfo.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/MemberDefinitionCollection.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/MemberReference.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/MetadataResolver.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/MetadataSystem.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/MethodAttributes.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/MethodCallingConvention.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/MethodDefinition.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/MethodImplAttributes.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/MethodReference.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/MethodReturnType.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/MethodSemanticsAttributes.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/MethodSpecification.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/Modifiers.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/ModuleDefinition.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/ModuleKind.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/ModuleReference.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/NativeType.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/ParameterAttributes.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/ParameterDefinition.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/ParameterDefinitionCollection.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/ParameterReference.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/PinnedType.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/PInvokeAttributes.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/PInvokeInfo.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/PointerType.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/PropertyAttributes.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/PropertyDefinition.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/PropertyReference.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/ReferenceType.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/Resource.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/SecurityDeclaration.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/SentinelType.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/TargetRuntime.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/TypeAttributes.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/TypeDefinition.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/TypeDefinitionCollection.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/TypeParser.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/TypeReference.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/TypeSpecification.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/TypeSystem.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Cecil/VariantType.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Collections.Generic/Collection.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Collections.Generic/ReadOnlyCollection.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Security.Cryptography/CryptoConvert.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono.Security.Cryptography/CryptoService.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono/Actions.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono/Empty.cs
+Assets/XIL/ILSource/Mono.Cecil.20/MonoCecil/Mono/Funcs.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Microsoft.Cci.Pdb/BitAccess.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Microsoft.Cci.Pdb/BitSet.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Microsoft.Cci.Pdb/CvInfo.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Microsoft.Cci.Pdb/DataStream.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Microsoft.Cci.Pdb/DbiDbgHdr.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Microsoft.Cci.Pdb/DbiHeader.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Microsoft.Cci.Pdb/DbiModuleInfo.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Microsoft.Cci.Pdb/DbiSecCon.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Microsoft.Cci.Pdb/Interfaces.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Microsoft.Cci.Pdb/IntHashTable.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Microsoft.Cci.Pdb/MsfDirectory.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Microsoft.Cci.Pdb/PdbConstant.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Microsoft.Cci.Pdb/PdbDebugException.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Microsoft.Cci.Pdb/PdbException.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Microsoft.Cci.Pdb/PdbFile.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Microsoft.Cci.Pdb/PdbFileHeader.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Microsoft.Cci.Pdb/PdbFunction.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Microsoft.Cci.Pdb/PdbLine.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Microsoft.Cci.Pdb/PdbLines.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Microsoft.Cci.Pdb/PdbReader.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Microsoft.Cci.Pdb/PdbScope.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Microsoft.Cci.Pdb/PdbSlot.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Microsoft.Cci.Pdb/PdbSource.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Microsoft.Cci.Pdb/SourceLocationProvider.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Mono.Cecil.Pdb/ISymUnmanagedDocumentWriter.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Mono.Cecil.Pdb/ISymUnmanagedWriter2.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Mono.Cecil.Pdb/ModuleMetadata.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Mono.Cecil.Pdb/PdbHelper.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Mono.Cecil.Pdb/PdbReader.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Mono.Cecil.Pdb/PdbWriter.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Mono.Cecil.Pdb/SymDocumentWriter.cs
+Assets/XIL/ILSource/Mono.Cecil.Pdb/pdb/Mono.Cecil.Pdb/SymWriter.cs
+Assets/XIL/Scripts/BehaviourAction.cs
+Assets/XIL/Scripts/CacheType.cs
+Assets/XIL/Scripts/Custom/ILLog.cs
+Assets/XIL/Scripts/Custom/UnityEngine_Debug_Binding.cs
+Assets/XIL/Scripts/Help.cs
+Assets/XIL/Scripts/hotMgr.cs
+Assets/XIL/Scripts/ILHotfix/CoroutineAdapter.cs
+Assets/XIL/Scripts/ILHotfix/DelegateBridge.cs
+Assets/XIL/Scripts/ILHotfix/ILHotfix.cs
+Assets/XIL/Scripts/ILHotfix/ObjectArrayPools.cs
+Assets/XIL/Scripts/ILHotfix/Objects.cs
+Assets/XIL/Scripts/ILHotfix/ResLoad.cs
+Assets/XIL/Scripts/RefOutParam.cs
+Assets/XIL/Scripts/RefType.cs
+Assets/XIL/Scripts/RefType_InvokeMethod.cs
+Assets/XIL/Scripts/ResourcesPath.cs
+Assets/XIL/Scripts/Serialize/AnyTypeSerialize.cs
+Assets/XIL/Scripts/Serialize/ArrayAnyType.cs
+Assets/XIL/Scripts/Serialize/BaseTypeSerialize.cs
+Assets/XIL/Scripts/Serialize/BaseTypeSerializeArray.cs
+Assets/XIL/Scripts/Serialize/DllInitByEditor.cs
+Assets/XIL/Scripts/Serialize/IListAnyType.cs
+Assets/XIL/Scripts/Serialize/ILMonoBehaviour.cs
+Assets/XIL/Scripts/Serialize/MonoSerialize.cs
+Assets/XIL/Scripts/Serialize/WRStream.cs
+/unsafe

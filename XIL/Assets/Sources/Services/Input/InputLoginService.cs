@@ -7,8 +7,8 @@ public class InputLoginService
 
     private Contexts m_contexts;
 
-    private LoginAuthSocket socket = new LoginAuthSocket();
     private bool is_do = false;
+    private LoginAuthSocket client = new LoginAuthSocket();
 
     private string host = "192.168.1.25";
     private int port = 15110;
@@ -39,13 +39,13 @@ public class InputLoginService
         }
         Debug.Log("Login Result DoLoginLogic");
         is_do = true;
-        socket.Init(entity.loginCMD.cmd, OnLoginResult);
-        socket.Connect(host, port, 5);
+        client.Init(entity.loginCMD.cmd, OnLoginResult);
+        client.Connect(host, port, 5);
     }
 
     private void OnLoginResult(int code)
     {
-        socket.Close();
+        client.Close();
         Debug.Log("Login Result code:" + code);
         // TODO code == 200 为成功
     }
