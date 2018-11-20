@@ -87,6 +87,8 @@
     <Compile Include="Assets\Plugins\FairyGUI\Scripts\Editor\UIContentScalerEditor.cs" />
     <Compile Include="Assets\Plugins\FairyGUI\Scripts\Editor\UIPainterEditor.cs" />
     <Compile Include="Assets\Plugins\FairyGUI\Scripts\Editor\UIPanelEditor.cs" />
+    <Compile Include="Assets\Plugins\NLog\NLog.Unity\Editor\ClientSocketAppenderEditor.cs" />
+    <Compile Include="Assets\Plugins\NLog\NLog.Unity\Editor\SOSMaxSocketAppenderEditor.cs" />
     <None Include="Assets\Plugins\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.cginc" />
     <None Include="Assets\Plugins\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.shader" />
     <None Include="Assets\Plugins\AstarPathfindingProject\Editor\EditorAssets\Materials\NavmeshOutline.shader" />
@@ -408,9 +410,6 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="log4net">
-      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/Log4Net/log4net.dll</HintPath>
-    </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/XIL/Scripts/ILHotfix/Editor/Mono.Cecil.dll</HintPath>
     </Reference>
@@ -440,6 +439,9 @@
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>D:/workspace/SkynetXILFrontend/XIL/Library/PackageCache/com.unity.purchasing@2.0.1/Editor/UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/NLog/NLog.CommandLineTool/NLog.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:/Apps/Unity 2018.3.0b9/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>

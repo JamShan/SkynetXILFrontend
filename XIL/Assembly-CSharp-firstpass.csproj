@@ -409,8 +409,28 @@
     <Compile Include="Assets\Plugins\HttpClient\HttpRequest\HttpRequest.cs" />
     <Compile Include="Assets\Plugins\HttpClient\Messages\HttpResponseMessage.cs" />
     <Compile Include="Assets\Plugins\HttpClient\Messages\UploadStatusMessage.cs" />
-    <Compile Include="Assets\Plugins\Log4Net\CWDFileAppender.cs" />
-    <Compile Include="Assets\Plugins\Log4Net\Unity3DConsoleAppender.cs" />
+    <Compile Include="Assets\Plugins\NLog\NLog.Unity\Appender\ClientSocketAppender.cs" />
+    <Compile Include="Assets\Plugins\NLog\NLog.Unity\Appender\DebugLogAppender.cs" />
+    <Compile Include="Assets\Plugins\NLog\NLog.Unity\Appender\FileAppender.cs" />
+    <Compile Include="Assets\Plugins\NLog\NLog.Unity\Appender\ServerSocketAppender.cs" />
+    <Compile Include="Assets\Plugins\NLog\NLog.Unity\Appender\SOSMaxSocketAppender.cs" />
+    <Compile Include="Assets\Plugins\NLog\NLog.Unity\NLogConfig.cs" />
+    <Compile Include="Assets\Plugins\NLog\NLog\Appender\FileWriter.cs" />
+    <Compile Include="Assets\Plugins\NLog\NLog\Appender\SocketAppender\Networking\AbstractTcpSocket.cs" />
+    <Compile Include="Assets\Plugins\NLog\NLog\Appender\SocketAppender\Networking\EventArgs\ReceiveEventArgs.cs" />
+    <Compile Include="Assets\Plugins\NLog\NLog\Appender\SocketAppender\Networking\EventArgs\TcpSocketEventArgs.cs" />
+    <Compile Include="Assets\Plugins\NLog\NLog\Appender\SocketAppender\Networking\TcpClientSocket.cs" />
+    <Compile Include="Assets\Plugins\NLog\NLog\Appender\SocketAppender\Networking\TcpServerSocket.cs" />
+    <Compile Include="Assets\Plugins\NLog\NLog\Appender\SocketAppender\SocketAppender.cs" />
+    <Compile Include="Assets\Plugins\NLog\NLog\Appender\SocketAppender\SocketAppenderBase.cs" />
+    <Compile Include="Assets\Plugins\NLog\NLog\Appender\SocketAppender\SOSMaxAppender.cs" />
+    <Compile Include="Assets\Plugins\NLog\NLog\Formatter\ColorCodeFormatter.cs" />
+    <Compile Include="Assets\Plugins\NLog\NLog\Formatter\DefaultLogMessageFormatter.cs" />
+    <Compile Include="Assets\Plugins\NLog\NLog\Formatter\TimestampFormatter.cs" />
+    <Compile Include="Assets\Plugins\NLog\NLog\Log.cs" />
+    <Compile Include="Assets\Plugins\NLog\NLog\Logger.cs" />
+    <Compile Include="Assets\Plugins\NLog\NLog\LoggerFactory.cs" />
+    <Compile Include="Assets\Plugins\NLog\NLog\LogLevel.cs" />
     <Compile Include="Assets\Plugins\SkynetClient\ByteBuffer.cs" />
     <Compile Include="Assets\Plugins\SkynetClient\Crypt.cs" />
     <Compile Include="Assets\Plugins\SkynetClient\GameTCPSocket.cs" />
@@ -709,9 +729,6 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="log4net">
-      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/Log4Net/log4net.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>D:/workspace/SkynetXILFrontend/XIL/Library/PackageCache/com.unity.analytics@3.0.9/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
@@ -726,6 +743,9 @@
     </Reference>
     <Reference Include="UnityEngine.Purchasing">
       <HintPath>D:/workspace/SkynetXILFrontend/XIL/Library/PackageCache/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/NLog/NLog.CommandLineTool/NLog.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:/Apps/Unity 2018.3.0b9/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>

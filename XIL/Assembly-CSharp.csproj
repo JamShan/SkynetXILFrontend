@@ -457,7 +457,6 @@
     <Compile Include="Assets\XIL\Scripts\Serialize\ILMonoBehaviour.cs" />
     <Compile Include="Assets\XIL\Scripts\Serialize\MonoSerialize.cs" />
     <Compile Include="Assets\XIL\Scripts\Serialize\WRStream.cs" />
-    <None Include="Assets\Resources\logConfig.txt" />
     <None Include="Assets\mcs.rsp" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/workspace/SkynetXILFrontend/XIL/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -705,9 +704,6 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="log4net">
-      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/Log4Net/log4net.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>D:/workspace/SkynetXILFrontend/XIL/Library/PackageCache/com.unity.analytics@3.0.9/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
@@ -722,6 +718,9 @@
     </Reference>
     <Reference Include="UnityEngine.Purchasing">
       <HintPath>D:/workspace/SkynetXILFrontend/XIL/Library/PackageCache/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/NLog/NLog.CommandLineTool/NLog.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:/Apps/Unity 2018.3.0b9/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>
