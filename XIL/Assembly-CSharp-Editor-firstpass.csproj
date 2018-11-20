@@ -79,6 +79,14 @@
     <Compile Include="Assets\Plugins\AstarPathfindingProject\Editor\SeekerEditor.cs" />
     <Compile Include="Assets\Plugins\AstarPathfindingProject\Legacy\Editor\LegacyAIPathEditor.cs" />
     <Compile Include="Assets\Plugins\AstarPathfindingProject\Legacy\Editor\LegacyEditorHelper.cs" />
+    <Compile Include="Assets\Plugins\FairyGUI\Scripts\Editor\DisplayObjectEditor.cs" />
+    <Compile Include="Assets\Plugins\FairyGUI\Scripts\Editor\EditorToolSet.cs" />
+    <Compile Include="Assets\Plugins\FairyGUI\Scripts\Editor\PackagesWindow.cs" />
+    <Compile Include="Assets\Plugins\FairyGUI\Scripts\Editor\StageCameraEditor.cs" />
+    <Compile Include="Assets\Plugins\FairyGUI\Scripts\Editor\UIConfigEditor.cs" />
+    <Compile Include="Assets\Plugins\FairyGUI\Scripts\Editor\UIContentScalerEditor.cs" />
+    <Compile Include="Assets\Plugins\FairyGUI\Scripts\Editor\UIPainterEditor.cs" />
+    <Compile Include="Assets\Plugins\FairyGUI\Scripts\Editor\UIPanelEditor.cs" />
     <None Include="Assets\Plugins\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.cginc" />
     <None Include="Assets\Plugins\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.shader" />
     <None Include="Assets\Plugins\AstarPathfindingProject\Editor\EditorAssets\Materials\NavmeshOutline.shader" />

@@ -18,7 +18,6 @@ public sealed class DestroyEntitySystem : ICleanupSystem
     {
         foreach (var entity in m_group.GetEntities(m_buffer))
         {
-            Debug.Log("++++++++Cleanup+++++++");
             if (entity.hasView)
             {
                 var view = entity.view.value;

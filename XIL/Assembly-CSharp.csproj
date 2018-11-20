@@ -75,9 +75,9 @@
     <Compile Include="Assets\Sources\Components\Game\PlayerComponent.cs" />
     <Compile Include="Assets\Sources\Components\Game\ResourceComponent.cs" />
     <Compile Include="Assets\Sources\Components\Game\ViewComponent.cs" />
-    <Compile Include="Assets\Sources\Components\Input\LoginCMD.cs" />
     <Compile Include="Assets\Sources\Components\Unique\Game\GameDataSetup.cs" />
     <Compile Include="Assets\Sources\Components\Unique\Game\InputComponent.cs" />
+    <Compile Include="Assets\Sources\Components\Unique\Input\LoginCMD.cs" />
     <Compile Include="Assets\Sources\Data\Game\EmitTriggerEntityBehaviour.cs" />
     <Compile Include="Assets\Sources\Generated\Components\GameDataSetupComponent.cs" />
     <Compile Include="Assets\Sources\Generated\Contexts.cs" />

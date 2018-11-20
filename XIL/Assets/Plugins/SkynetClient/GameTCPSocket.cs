@@ -24,6 +24,7 @@ namespace SkynetClient
 
         public void OnConnected()
         {
+            NetCore.Init();
             NetSender.Init();
             NetReceiver.Init();
             // TODO: do handshake rpc

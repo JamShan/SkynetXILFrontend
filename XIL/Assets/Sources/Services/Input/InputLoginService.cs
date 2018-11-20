@@ -8,7 +8,6 @@ public class InputLoginService
     private Contexts m_contexts;
 
     private bool is_do = false;
-    private LoginAuthSocket client = new LoginAuthSocket();
 
     private string host = "192.168.1.25";
     private int port = 15110;
@@ -18,35 +17,32 @@ public class InputLoginService
         m_contexts = contexts;
     }
 
-    public InputEntity CreateLoginCMDEntity()
+    public void CreateLoginCMDEntity()
     {
-        var entity = m_contexts.input.CreateEntity();
         AuthPackage cmd = new AuthPackage();
         cmd.openId = "test_xil_001";
         cmd.sdk = "2";
         cmd.serverId = "1";
         cmd.pf = "1010";
         cmd.userData = "test_xil_001";
-        entity.AddLoginCMD(cmd);
-        return entity;
+
+        m_contexts.input.ReplaceLoginCMD(cmd);
     }
 
     public void DoLoginLogic(InputEntity entity)
     {
-        if(is_do)
+        if (is_do)
         {
             return;
         }
         Debug.Log("Login Result DoLoginLogic");
         is_do = true;
-        client.Init(entity.loginCMD.cmd, OnLoginResult);
-        client.Connect(host, port, 5);
+
+        AuthPackage cmd = m_contexts.input.loginCMDEntity.loginCMD.cmd;
+        LoginAuthHttp.DoLoginReqAction(cmd, DoLoginRespAction);
     }
 
-    private void OnLoginResult(int code)
+    private void DoLoginRespAction(AuthPackageResp resp)
     {
-        client.Close();
-        Debug.Log("Login Result code:" + code);
-        // TODO code == 200 为成功
     }
 }

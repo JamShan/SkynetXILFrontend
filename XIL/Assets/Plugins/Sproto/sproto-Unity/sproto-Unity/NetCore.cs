@@ -16,7 +16,6 @@ namespace SprotoUnity
 	{
 		private static Socket socket;
 
-		public static bool logined;
 		public static bool enabled;
 
 		private static int CONNECT_TIMEOUT = 3000;
