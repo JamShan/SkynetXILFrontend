@@ -762,9 +762,6 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="NLog">
-      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/NLog/NLog.CommandLineTool/NLog.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>D:/workspace/SkynetXILFrontend/XIL/Library/PackageCache/com.unity.analytics@3.0.9/Unity.Analytics.Editor.dll</HintPath>
     </Reference>

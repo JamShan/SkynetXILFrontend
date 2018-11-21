@@ -45,7 +45,7 @@ public class InputLoginService
 
     private void DoLoginRespAction(AuthPackageResp resp)
     {
-        //NLog.Log.Debug("+++++DoLoginRespAction Resp+++++++++");
+        NLog.Log.Debug("+++++DoLoginRespAction Resp+++++++++" + resp.gate);
         //Debug.Log("#################" + resp.gate);
     }
 }

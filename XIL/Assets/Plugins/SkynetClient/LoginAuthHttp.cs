@@ -43,10 +43,12 @@ namespace SkynetClient
                 {
                     string str = r.ReadAsString();
                     Debug.Log("responstr:" + str);
+                    NLog.Log.Debug("+++++Test responstr+++++++++" + str);
                 }
                 else
                 {
                     Debug.Log("statuscode:" + r.StatusCode.ToString());
+                    NLog.Log.Debug("+++++Test statuscode+++++++++" + r.StatusCode.ToString());
                 }
             });
 

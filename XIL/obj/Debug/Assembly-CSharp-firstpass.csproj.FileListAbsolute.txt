@@ -376,7 +376,6 @@ D:\workspace\SkynetXILFrontend\XIL\obj\Debug\Assembly-CSharp-firstpass.csproj.Co
 D:\workspace\SkynetXILFrontend\XIL\obj\Debug\Assembly-CSharp-firstpass.csproj.CopyComplete
 D:\workspace\SkynetXILFrontend\XIL\obj\Debug\Assembly-CSharp-firstpass.dll
 D:\workspace\SkynetXILFrontend\XIL\obj\Debug\Assembly-CSharp-firstpass.pdb
-D:\workspace\SkynetXILFrontend\XIL\Temp\bin\Debug\NLog.dll
 D:\workspace\SkynetXILFrontend\XIL\Temp\bin\Debug\UnityEditor.UI.dll
 D:\workspace\SkynetXILFrontend\XIL\Temp\bin\Debug\UniRx.pdb
 D:\workspace\SkynetXILFrontend\XIL\Temp\bin\Debug\UniRx.Async.pdb

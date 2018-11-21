@@ -27,7 +27,6 @@ D:\workspace\SkynetXILFrontend\XIL\Temp\bin\Debug\Mono.Cecil.Mdb.dll
 D:\workspace\SkynetXILFrontend\XIL\Temp\bin\Debug\Mono.Cecil.Pdb.dll
 D:\workspace\SkynetXILFrontend\XIL\Temp\bin\Debug\mscorlib.dll
 D:\workspace\SkynetXILFrontend\XIL\Temp\bin\Debug\Newtonsoft.Json.dll
-D:\workspace\SkynetXILFrontend\XIL\Temp\bin\Debug\NLog.dll
 D:\workspace\SkynetXILFrontend\XIL\Temp\bin\Debug\nunit.framework.dll
 D:\workspace\SkynetXILFrontend\XIL\Temp\bin\Debug\Pathfinding.Ionic.Zip.Reduced.dll
 D:\workspace\SkynetXILFrontend\XIL\Temp\bin\Debug\SyntaxTree.VisualStudio.Unity.Bridge.dll
