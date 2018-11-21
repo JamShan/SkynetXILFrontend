@@ -38,11 +38,14 @@ public class InputLoginService
         Debug.Log("Login Result DoLoginLogic");
         is_do = true;
 
+        LoginAuthHttp.Test();
         AuthPackage cmd = m_contexts.input.loginCMDEntity.loginCMD.cmd;
-        LoginAuthHttp.DoLoginReqAction(cmd, DoLoginRespAction);
+        //LoginAuthHttp.DoLoginReqAction(cmd, DoLoginRespAction);
     }
 
     private void DoLoginRespAction(AuthPackageResp resp)
     {
+        //NLog.Log.Debug("+++++DoLoginRespAction Resp+++++++++");
+        //Debug.Log("#################" + resp.gate);
     }
 }

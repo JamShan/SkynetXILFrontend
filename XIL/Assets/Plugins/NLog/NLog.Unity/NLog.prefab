@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 400000}
-  - component: {fileID: 3738609553890993370}
-  - component: {fileID: 9009187695629683686}
-  - component: {fileID: 6538962765291621188}
+  - component: {fileID: 5413443198878775777}
+  - component: {fileID: 6057831815749190645}
+  - component: {fileID: 1322613669038567482}
   m_Layer: 0
   m_Name: NLog
   m_TagString: Untagged
@@ -33,7 +33,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3738609553890993370
+--- !u!114 &5413443198878775777
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,12 +42,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd6fe02e1c73a074695ba48989b8c713, type: 3}
+  m_Script: {fileID: 11500000, guid: d84e1f522326af34ab308d37fab7c9a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   logLevel: 0
   catchUnityLogs: 1
---- !u!114 &9009187695629683686
+--- !u!114 &6057831815749190645
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -56,13 +56,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38612fc075ee9f443984e3a5d17f35c3, type: 3}
+  m_Script: {fileID: 11500000, guid: 19acc6e055a561541af57e24d574cbdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sendToIpAddress: 127.0.0.1
   sendOnPort: 1234
   cacheLogsWhenNotConnected: 1
---- !u!114 &6538962765291621188
+--- !u!114 &1322613669038567482
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -71,7 +71,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80edf7a32d3eaf145b66faf1d22a848f, type: 3}
+  m_Script: {fileID: 11500000, guid: cfefce25cdaca794ca8b54d48a28eb1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   filePath: Log.txt

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Net;
 using CI.HttpClient.Core;
 using UnityEngine;
+using System.Net.Security;
+
 
 #if NETFX_CORE
 using Windows.System.Threading;
@@ -84,10 +86,12 @@ namespace CI.HttpClient
 
         public static IDispatcher _dispatcher;
 
+
+
         /// <summary>
         /// Provides a class for sending HTTP requests and receiving HTTP responses from a resource identified by a URI
         /// </summary>
-        public HttpClient()
+        public HttpClient(bool validateCertificates = false)
         {
             DownloadBlockSize = DEFAULT_BLOCK_SIZE;
             UploadBlockSize = DEFAULT_BLOCK_SIZE;
@@ -99,6 +103,39 @@ namespace CI.HttpClient
             _lock = new object();
 
             CreateDispatcherGameObject();
+
+            if(validateCertificates)
+            {
+                ConfigureCertificate();
+            }
+        }
+
+        public static void ConfigureCertificate()
+        {
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls;
+            ServicePointManager.ServerCertificateValidationCallback = null;
+
+            RemoteCertificateValidationCallback prevValidator;
+            System.Net.SecurityProtocolType protocolType;
+
+            ConfigureCertificateValidatation(false, out protocolType, out prevValidator);
+        }
+
+        private static void ConfigureCertificateValidatation(
+    bool validateCertificates,
+    out SecurityProtocolType protocolType,
+    out RemoteCertificateValidationCallback prevValidator)
+        {
+            prevValidator = null;
+            protocolType = (System.Net.SecurityProtocolType)0;
+
+            if (!validateCertificates)
+            {
+                protocolType = ServicePointManager.SecurityProtocol;
+                ServicePointManager.SecurityProtocol =SecurityProtocolType.Tls;
+                prevValidator = ServicePointManager.ServerCertificateValidationCallback;
+               ServicePointManager.ServerCertificateValidationCallback = (sender, cert, chain, sslPolicyErrors) => true;
+            }
         }
 
         /// <summary>

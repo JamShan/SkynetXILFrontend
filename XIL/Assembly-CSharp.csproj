@@ -61,8 +61,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\hotScripts\MonoSerialTest.cs" />
-    <Compile Include="Assets\hotScripts\TestSer.cs" />
+    <Compile Include="Assets\HotScripts\MonoSerialTest.cs" />
+    <Compile Include="Assets\HotScripts\TestSer.cs" />
     <Compile Include="Assets\Scripts\Controllers\GameController.cs" />
     <Compile Include="Assets\Scripts\Controllers\InputController.cs" />
     <Compile Include="Assets\Scripts\Demos\HelloWorld.cs" />
@@ -704,6 +704,9 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="NLog">
+      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/NLog/NLog.CommandLineTool/NLog.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>D:/workspace/SkynetXILFrontend/XIL/Library/PackageCache/com.unity.analytics@3.0.9/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
@@ -718,9 +721,6 @@
     </Reference>
     <Reference Include="UnityEngine.Purchasing">
       <HintPath>D:/workspace/SkynetXILFrontend/XIL/Library/PackageCache/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll</HintPath>
-    </Reference>
-    <Reference Include="NLog">
-      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/NLog/NLog.CommandLineTool/NLog.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:/Apps/Unity 2018.3.0b9/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>
@@ -754,6 +754,18 @@
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{D6906025-83A1-F053-C27C-A1E5538C4819}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniRx.csproj">
+      <Project>{33C4B7E8-A4D6-3B16-E92B-2F8B40A2CBFD}</Project>
+      <Name>UniRx</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniRx.Async.csproj">
+      <Project>{E2178842-82AA-1648-6300-13A6592F83D1}</Project>
+      <Name>UniRx.Async</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniRx.Async.Editor.csproj">
+      <Project>{BC6BC1B1-186B-5561-B472-6E5674CA9DD5}</Project>
+      <Name>UniRx.Async.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

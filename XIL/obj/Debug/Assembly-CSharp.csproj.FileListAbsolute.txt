@@ -199,7 +199,6 @@ D:\workspace\SkynetXILFrontend\XIL\Temp\bin\Debug\Entitas.CodeGeneration.Attribu
 D:\workspace\SkynetXILFrontend\XIL\Temp\bin\Debug\Entitas.dll
 D:\workspace\SkynetXILFrontend\XIL\Temp\bin\Debug\Entitas.Unity.dll
 D:\workspace\SkynetXILFrontend\XIL\Temp\bin\Debug\Entitas.VisualDebugging.Unity.dll
-D:\workspace\SkynetXILFrontend\XIL\Temp\bin\Debug\log4net.dll
 D:\workspace\SkynetXILFrontend\XIL\Temp\bin\Debug\mscorlib.dll
 D:\workspace\SkynetXILFrontend\XIL\Temp\bin\Debug\Newtonsoft.Json.dll
 D:\workspace\SkynetXILFrontend\XIL\Temp\bin\Debug\nunit.framework.dll
@@ -379,3 +378,9 @@ D:\workspace\SkynetXILFrontend\XIL\obj\Debug\Assembly-CSharp.csproj.CoreCompileI
 D:\workspace\SkynetXILFrontend\XIL\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 D:\workspace\SkynetXILFrontend\XIL\obj\Debug\Assembly-CSharp.dll
 D:\workspace\SkynetXILFrontend\XIL\obj\Debug\Assembly-CSharp.pdb
+D:\workspace\SkynetXILFrontend\XIL\Temp\bin\Debug\NLog.dll
+D:\workspace\SkynetXILFrontend\XIL\Temp\bin\Debug\UnityEditor.UI.dll
+D:\workspace\SkynetXILFrontend\XIL\Temp\bin\Debug\UniRx.pdb
+D:\workspace\SkynetXILFrontend\XIL\Temp\bin\Debug\UniRx.Async.pdb
+D:\workspace\SkynetXILFrontend\XIL\Temp\bin\Debug\UniRx.Async.Editor.pdb
+D:\workspace\SkynetXILFrontend\XIL\Temp\bin\Debug\UnityEditor.UI.xml
