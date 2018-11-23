@@ -45,14 +45,11 @@ namespace XIL.AI.Behavior3Sharp
     public class Decorator:  BaseNode
     {
         protected BaseNode child;
-        public Decorator()
-        {
-            this.category = Constants.DECORATOR;
-        }
 
         public override void Initialize(Behavior3NodeCfg cfg)
         {
             base.Initialize(cfg);
+            this.category = Constants.DECORATOR;
         }
 
         public BaseNode GetChild()

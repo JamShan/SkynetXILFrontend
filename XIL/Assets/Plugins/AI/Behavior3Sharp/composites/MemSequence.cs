@@ -13,6 +13,14 @@ namespace XIL.AI.Behavior3Sharp
 {
     public class MemSequence : Composite
     {
+        public override void Initialize(Behavior3NodeCfg cfg)
+        {
+            base.Initialize(cfg);
+
+            this.name = "MemSequence";
+            this.title = "MemSequence ";
+        }
+
         public override void open(Tick tick)
         {
             tick.blackboard.Set("runningChild", 0, tick.tree.id, this.id);

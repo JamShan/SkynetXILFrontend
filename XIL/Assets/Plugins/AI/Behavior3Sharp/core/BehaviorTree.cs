@@ -158,11 +158,41 @@ namespace XIL.AI.Behavior3Sharp
             this.dumpinfo = data;
 
             Dictionary<string, BaseNode> nodes = new Dictionary<string, BaseNode>();
-
-            foreach(var item in data.nodes)
+            Behavior3NodeCfg spec;
+            BaseNode node;
+            foreach (KeyValuePair<string, Behavior3NodeCfg> kv in data.nodes)
             {
-
+                spec = kv.Value;
+                node = B3Functions.CreateBehavior3Instance<BaseNode>(spec.name);
+                if(node == null)
+                {
+                    throw new Exception("BehaviorTree.load: Invalid node name:" + spec.name);
+                }
+                node.Initialize(spec);
+                nodes[spec.id] = node;
             }
+
+            foreach (KeyValuePair<string, Behavior3NodeCfg> kv in data.nodes)
+            {
+                spec = kv.Value;
+                node = nodes[spec.id];
+                var category = node.GetCategory();
+                if (category == Constants.COMPOSITE && spec.children.Count >0)
+                {
+                    for(int i=0; i< spec.children.Count; i++)
+                    {
+                        Composite comp = (Composite)node;
+                        comp.AddChild(nodes[spec.children[i]]);
+                    }
+                } 
+                else if(category == Constants.DECORATOR && spec.child.Length >0)
+                {
+                    Decorator dec = (Decorator)node;
+                    dec.SetChild(nodes[spec.child]);
+                }
+            }
+
+            this.root = nodes[data.root];
         }
 
         /**

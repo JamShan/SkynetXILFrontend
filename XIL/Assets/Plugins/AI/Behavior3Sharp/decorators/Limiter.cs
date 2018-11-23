@@ -18,6 +18,8 @@ namespace XIL.AI.Behavior3Sharp
         {
             base.Initialize(cfg);
             this.maxLoop = cfg.GetValue<int>("maxLoop", 1);
+            this.name = "Limiter";
+            this.title = "Limit <maxLoop> Activations";
         }
 
         public override void open(Tick tick)

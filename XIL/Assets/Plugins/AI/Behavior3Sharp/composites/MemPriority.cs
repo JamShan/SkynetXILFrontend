@@ -14,6 +14,14 @@ namespace XIL.AI.Behavior3Sharp
 {
     public class MemPriority : Composite
     {
+        public override void Initialize(Behavior3NodeCfg cfg)
+        {
+            base.Initialize(cfg);
+
+            this.name = "MemPriority";
+            this.title = "MemPriority ";
+        }
+
         public override void open(Tick tick)
         {
             tick.blackboard.Set("runningChild", 0, tick.tree.id, this.id);

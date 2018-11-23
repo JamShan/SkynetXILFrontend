@@ -13,6 +13,14 @@ namespace XIL.AI.Behavior3Sharp
 {
     public class Sequence : Composite
     {
+        public override void Initialize(Behavior3NodeCfg cfg)
+        {
+            base.Initialize(cfg);
+
+            this.name = "Sequence";
+            this.title = "Sequence ";
+        }
+
         public override B3Status tick(Tick tick)
         {
             for (int i = 0; i < this.children.Count; i++)

@@ -19,6 +19,8 @@ namespace XIL.AI.Behavior3Sharp
         {
             base.Initialize(cfg);
             this.maxLoop = cfg.GetValue<int>("maxLoop", -1);
+            this.name = "RepeatUntilSuccess";
+            this.title = "Repeat Until Success";
         }
 
         public override void open(Tick tick)

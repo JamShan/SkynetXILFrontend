@@ -11,14 +11,10 @@ namespace XIL.AI.Behavior3Sharp
 {
     class Condition : BaseNode
     {
-        public Condition()
-        {
-            this.category = Constants.CONDITION;
-        }
-
         public override void Initialize(Behavior3NodeCfg cfg)
         {
             base.Initialize(cfg);
+            this.category = Constants.CONDITION;
         }
 
     }

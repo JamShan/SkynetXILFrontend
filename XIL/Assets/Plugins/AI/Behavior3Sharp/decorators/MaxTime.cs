@@ -21,6 +21,8 @@ namespace XIL.AI.Behavior3Sharp
         {
             base.Initialize(cfg);
             this.maxTime = cfg.GetValue<int>("maxTime", 0);
+            this.name = "MaxTime";
+            this.title = "Max <maxTime>ms";
         }
 
         public override void open(Tick tick)

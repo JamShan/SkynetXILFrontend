@@ -11,6 +11,14 @@ namespace XIL.AI.Behavior3Sharp
 {
     public class Inverter : Decorator
     {
+        public override void Initialize(Behavior3NodeCfg cfg)
+        {
+            base.Initialize(cfg);
+
+            this.name = "Inverter";
+            this.title = "Inverter ";
+        }
+
         public override B3Status tick(Tick tick)
         {
             if(this.child == null)

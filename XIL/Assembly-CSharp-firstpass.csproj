@@ -88,6 +88,7 @@
     <Compile Include="Assets\Plugins\AI\Behavior3Sharp\decorators\Repeater.cs" />
     <Compile Include="Assets\Plugins\AI\Behavior3Sharp\decorators\RepeatUntilFailure.cs" />
     <Compile Include="Assets\Plugins\AI\Behavior3Sharp\decorators\RepeatUntilSuccess.cs" />
+    <Compile Include="Assets\Plugins\AI\Behavior3Sharp\etc\testB3.cs" />
     <Compile Include="Assets\Plugins\AI\BehaviorTree\Actions\BehaviorTreeReference.cs" />
     <Compile Include="Assets\Plugins\AI\BehaviorTree\Actions\ExecuteAction.cs" />
     <Compile Include="Assets\Plugins\AI\BehaviorTree\Actions\LogAction.cs" />

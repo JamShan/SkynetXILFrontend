@@ -12,6 +12,14 @@ namespace XIL.AI.Behavior3Sharp
 {
     public class Priority : Composite
     {
+        public override void Initialize(Behavior3NodeCfg cfg)
+        {
+            base.Initialize(cfg);
+
+            this.name = "Priority";
+            this.title = "Priority ";
+        }
+
         public override B3Status tick(Tick tick)
         {
             for (int i = 0; i < this.children.Count; i++)

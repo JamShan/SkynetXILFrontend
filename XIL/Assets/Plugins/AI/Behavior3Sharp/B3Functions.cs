@@ -22,6 +22,15 @@ namespace XIL.AI.Behavior3Sharp
             return s.ToString();
         }
 
+        public static BehaviorTree BuildBehavior3TreeFromConfig(string path)
+        {
+            Behavior3TreeCfg cfg = Behavior3Cfg.LoadBehavior3TreeCfg(path);
+            var tree = new BehaviorTree();
+            tree.Initialize();
+            tree.Load(cfg);
+            return tree;
+        }
+
         public static BaseNode CreateBehavior3Instance<T>(string classname)
         {
             return CreateInstance<BaseNode>("Behavior3Sharp", "XIL.AI.Behavior3Sharp", classname);

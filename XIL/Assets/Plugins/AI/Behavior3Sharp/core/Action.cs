@@ -23,16 +23,12 @@ namespace XIL.AI.Behavior3Sharp
 {
     public class Action: BaseNode
     {
-        public Action()
-        {
-            this.category = Constants.ACTION;
-        }
-
         public override void Initialize(Behavior3NodeCfg cfg)
         {
             base.Initialize(cfg);
             this.parameters = new Dictionary<string, object>();
 	        this.properties = new Dictionary<string, object>();
+            this.category = Constants.ACTION;
         }
 
     }

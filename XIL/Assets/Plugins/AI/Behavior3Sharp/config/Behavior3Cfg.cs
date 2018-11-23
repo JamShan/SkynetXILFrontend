@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using Newtonsoft.Json;
+
+
 
 namespace XIL.AI.Behavior3Sharp
 {
@@ -9,7 +12,8 @@ namespace XIL.AI.Behavior3Sharp
         public string name;
         public string title;
         public string description;
-        public List<string> children;
+        public List<string> children = new List<string>();
+        public string child = "";
         public Dictionary<string, object> parameters = new Dictionary<string, object>();
         public Dictionary<string, object> properties = new Dictionary<string, object>();
 

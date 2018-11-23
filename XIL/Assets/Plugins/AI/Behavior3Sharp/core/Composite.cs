@@ -47,15 +47,11 @@ namespace XIL.AI.Behavior3Sharp
     {
         protected List<BaseNode> children;
 
-        public Composite()
-        {
-            this.category = Constants.COMPOSITE;
-        }
-
         public override void Initialize(Behavior3NodeCfg cfg)
         {
             base.Initialize(cfg);
             this.children = new List<BaseNode>();
+            this.category = Constants.COMPOSITE;
         }
 
         public int GetChildCount()

@@ -18,6 +18,8 @@ namespace XIL.AI.Behavior3Sharp
         {
             base.Initialize(cfg);
             this.endTime = cfg.GetValue<int>("milliseconds", 0);
+            this.name = "Wait";
+            this.title = "Wait <milliseconds>ms ";
         }
 
         public override void open(Tick tick)
