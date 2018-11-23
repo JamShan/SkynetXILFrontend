@@ -26,8 +26,8 @@ namespace XIL.AI.Behavior3Sharp
         public override void Initialize(Behavior3NodeCfg cfg)
         {
             base.Initialize(cfg);
-            this.parameters = new Dictionary<string, object>();
-	        this.properties = new Dictionary<string, object>();
+            this.parameters = new Dictionary<string, string>();
+	        this.properties = new Dictionary<string, string>();
             this.category = Constants.ACTION;
         }
 

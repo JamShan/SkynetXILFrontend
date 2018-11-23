@@ -163,7 +163,7 @@ namespace XIL.AI.Behavior3Sharp
             foreach (KeyValuePair<string, Behavior3NodeCfg> kv in data.nodes)
             {
                 spec = kv.Value;
-                node = B3Functions.CreateBehavior3Instance<BaseNode>(spec.name);
+                node = Behavior3Factory.singleton.CreateBehavior3Instance(spec.name);
                 if(node == null)
                 {
                     throw new Exception("BehaviorTree.load: Invalid node name:" + spec.name);
@@ -226,11 +226,7 @@ namespace XIL.AI.Behavior3Sharp
             }
 
             var tick = new Tick();
-            tick.Initialize();
-            tick.debug = this.debug;
-            tick.target = target;
-            tick.blackboard = blackboard;
-            tick.tree = this;
+            tick.Initialize(this, blackboard, debug, target);
 
             /* TICK NODE*/
             var status = this.root._execute(tick);

@@ -17,7 +17,7 @@ namespace XIL.AI.Behavior3Sharp
         public override void Initialize(Behavior3NodeCfg cfg)
         {
             base.Initialize(cfg);
-            this.endTime = cfg.GetValue<int>("milliseconds", 0);
+            this.endTime = cfg.GetInt32("milliseconds", 0);
             this.name = "Wait";
             this.title = "Wait <milliseconds>ms ";
         }

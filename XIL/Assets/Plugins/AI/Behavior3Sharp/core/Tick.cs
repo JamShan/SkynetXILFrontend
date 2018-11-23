@@ -40,7 +40,7 @@ namespace XIL.AI.Behavior3Sharp
         * @protected
         * @readOnly
         **/
-        public List<BaseNode> _openNodes;
+        public List<BaseNode> _openNodes = null;
 
         /**
          * The number of nodes entered during the tick. Update during the tree
@@ -53,9 +53,13 @@ namespace XIL.AI.Behavior3Sharp
         public int _nodeCount = 0;
 
 
-        public void Initialize()
+        public void Initialize(BehaviorTree tree, Blackboard blackboard, object debug, object target)
         {
-
+            this.debug = debug;
+            this.target = target;
+            this.blackboard = blackboard;
+            this.tree = tree;
+            this._openNodes = new List<BaseNode>();
         }
 
         /**
@@ -103,7 +107,10 @@ namespace XIL.AI.Behavior3Sharp
         public void _closeNode(BaseNode node)
         {
             // TODO: call debug here
-            this._openNodes.RemoveAt(0);
+            if(this._openNodes.Count > 0)
+            {
+                this._openNodes.Remove(this._openNodes[this._openNodes.Count - 1]);
+            }
         }
 
         /**

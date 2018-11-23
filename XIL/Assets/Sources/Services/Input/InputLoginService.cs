@@ -38,8 +38,9 @@ public class InputLoginService
         Debug.Log("Login Result DoLoginLogic");
         is_do = true;
 
-        LoginAuthHttp.Test();
-        AuthPackage cmd = m_contexts.input.loginCMDEntity.loginCMD.cmd;
+        XIL.AI.Behavior3Sharp.TestB3.Test();
+        //LoginAuthHttp.Test();
+        //AuthPackage cmd = m_contexts.input.loginCMDEntity.loginCMD.cmd;
         //LoginAuthHttp.DoLoginReqAction(cmd, DoLoginRespAction);
     }
 

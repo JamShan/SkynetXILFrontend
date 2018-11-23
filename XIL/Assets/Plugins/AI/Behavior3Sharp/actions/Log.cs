@@ -8,11 +8,14 @@ namespace XIL.AI.Behavior3Sharp
         public override void Initialize(Behavior3NodeCfg cfg)
         {
             base.Initialize(cfg);
-            this.info = cfg.GetValue<string>("info", "log-action");
+            this.info = cfg.GetIntString("info", "log-action");
             this.name = "LogAction";
             this.title = "LogAction";
         }
 
-        public override B3Status tick(Tick tick) { return B3Status.SUCCESS; }
+        public override B3Status tick(Tick tick) {
+            //Debug.Log("++tick++" + this.info + " name:" + this.name + "title:" + this.title);
+            return B3Status.SUCCESS;
+        }
     }
 }

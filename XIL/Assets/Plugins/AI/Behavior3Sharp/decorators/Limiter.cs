@@ -17,7 +17,7 @@ namespace XIL.AI.Behavior3Sharp
         public override void Initialize(Behavior3NodeCfg cfg)
         {
             base.Initialize(cfg);
-            this.maxLoop = cfg.GetValue<int>("maxLoop", 1);
+            this.maxLoop = cfg.GetInt32("maxLoop", 1);
             this.name = "Limiter";
             this.title = "Limit <maxLoop> Activations";
         }

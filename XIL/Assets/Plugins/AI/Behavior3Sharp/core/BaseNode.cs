@@ -34,8 +34,8 @@ namespace XIL.AI.Behavior3Sharp
         protected string category = "";
         protected string title;
         protected string description = "";
-        protected Dictionary<string, object> parameters;
-        protected Dictionary<string, object> properties;
+        protected Dictionary<string, string> parameters;
+        protected Dictionary<string, string> properties;
 
         public virtual void Initialize(Behavior3NodeCfg cfg)
         {
@@ -44,8 +44,8 @@ namespace XIL.AI.Behavior3Sharp
             this.description = cfg.description;
             this.title = cfg.title;
 
-            this.parameters = new Dictionary<string, object>();
-            this.properties = new Dictionary<string, object>();
+            this.parameters = new Dictionary<string, string>();
+            this.properties = new Dictionary<string, string>();
 
             this.parameters = cfg.parameters;
             this.properties = cfg.properties;

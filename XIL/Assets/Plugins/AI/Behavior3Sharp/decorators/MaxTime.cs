@@ -20,7 +20,7 @@ namespace XIL.AI.Behavior3Sharp
         public override void Initialize(Behavior3NodeCfg cfg)
         {
             base.Initialize(cfg);
-            this.maxTime = cfg.GetValue<int>("maxTime", 0);
+            this.maxTime = cfg.GetInt32("maxTime", 0);
             this.name = "MaxTime";
             this.title = "Max <maxTime>ms";
         }
