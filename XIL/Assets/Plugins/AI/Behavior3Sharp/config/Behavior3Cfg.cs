@@ -26,7 +26,7 @@ namespace XIL.AI.Behavior3Sharp
             return value;
         }
 
-        public string GetIntString(string key, string defaultValue)
+        public string GetString(string key, string defaultValue)
         {
             if (this.properties.ContainsKey(key) == false)
             {

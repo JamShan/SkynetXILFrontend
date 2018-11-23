@@ -8,7 +8,7 @@ namespace XIL.AI.Behavior3Sharp
         public override void Initialize(Behavior3NodeCfg cfg)
         {
             base.Initialize(cfg);
-            this.info = cfg.GetIntString("info", "log-action");
+            this.info = cfg.GetString("info", "log-action");
             this.name = "LogAction";
             this.title = "LogAction";
         }
