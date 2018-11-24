@@ -1,0 +1,2 @@
+./lua53/lua53 sprotodump.lua -cs ../../Protos/proto.c2s.sproto -o ../../XIL/Assets/Scripts/Protos/GameProtoC2S.cs -p GameProtoC2S
+./lua53/lua53 sprotodump.lua -cs ../../Protos/proto.s2c.sproto -o ../../XIL/Assets/Scripts/Protos/GameProtoS2C.cs -p GameProtoS2C

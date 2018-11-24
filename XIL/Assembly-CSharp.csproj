@@ -66,6 +66,8 @@
     <Compile Include="Assets\Scripts\Controllers\GameController.cs" />
     <Compile Include="Assets\Scripts\Controllers\InputController.cs" />
     <Compile Include="Assets\Scripts\Demos\HelloWorld.cs" />
+    <Compile Include="Assets\Scripts\Protos\GameProtoC2S.cs" />
+    <Compile Include="Assets\Scripts\Protos\GameProtoS2C.cs" />
     <Compile Include="Assets\Sources\Components\Game\AccelerationComponent.cs" />
     <Compile Include="Assets\Sources\Components\Game\AsteroidComponent.cs" />
     <Compile Include="Assets\Sources\Components\Game\CollisionComponent.cs" />

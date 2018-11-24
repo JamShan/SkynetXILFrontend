@@ -38,10 +38,10 @@ public class InputLoginService
         Debug.Log("Login Result DoLoginLogic");
         is_do = true;
 
-        XIL.AI.Behavior3Sharp.TestB3.Test();
+        //XIL.AI.Behavior3Sharp.TestB3.Test();
         //LoginAuthHttp.Test();
-        //AuthPackage cmd = m_contexts.input.loginCMDEntity.loginCMD.cmd;
-        //LoginAuthHttp.DoLoginReqAction(cmd, DoLoginRespAction);
+        AuthPackage cmd = m_contexts.input.loginCMDEntity.loginCMD.cmd;
+        LoginAuthHttp.DoLoginReqAction(cmd, DoLoginRespAction);
     }
 
     private void DoLoginRespAction(AuthPackageResp resp)
