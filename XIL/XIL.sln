@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{7DBF03DB-7C00-35A7-1DCC-0513983BAC18}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniRx", "UniRx.csproj", "{33C4B7E8-A4D6-3B16-E92B-2F8B40A2CBFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{7DBF03DB-7C00-35A7-1DCC-0513983BAC18}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{D6906025-83A1-F053-C27C-A1E5538C4819}"
 EndProject
@@ -23,14 +23,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7DBF03DB-7C00-35A7-1DCC-0513983BAC18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7DBF03DB-7C00-35A7-1DCC-0513983BAC18}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7DBF03DB-7C00-35A7-1DCC-0513983BAC18}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7DBF03DB-7C00-35A7-1DCC-0513983BAC18}.Release|Any CPU.Build.0 = Release|Any CPU
 		{33C4B7E8-A4D6-3B16-E92B-2F8B40A2CBFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{33C4B7E8-A4D6-3B16-E92B-2F8B40A2CBFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33C4B7E8-A4D6-3B16-E92B-2F8B40A2CBFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33C4B7E8-A4D6-3B16-E92B-2F8B40A2CBFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DBF03DB-7C00-35A7-1DCC-0513983BAC18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DBF03DB-7C00-35A7-1DCC-0513983BAC18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DBF03DB-7C00-35A7-1DCC-0513983BAC18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DBF03DB-7C00-35A7-1DCC-0513983BAC18}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D6906025-83A1-F053-C27C-A1E5538C4819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D6906025-83A1-F053-C27C-A1E5538C4819}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6906025-83A1-F053-C27C-A1E5538C4819}.Release|Any CPU.ActiveCfg = Release|Any CPU

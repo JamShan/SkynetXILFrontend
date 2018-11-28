@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using Entitas.CodeGeneration.Attributes;
 
+
 [CreateAssetMenu]
 [Game, Unique]
 public class GameDataSetup : ScriptableObject
@@ -17,3 +18,4 @@ public class GameDataSetup : ScriptableObject
     public GameObject[] smalls;
     public GameObject[] tinys;
 }
+

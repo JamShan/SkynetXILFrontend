@@ -7,8 +7,6 @@ public class InputLoginService
 
     private Contexts m_contexts;
 
-    private bool is_do = false;
-
     private string host = "192.168.1.25";
     private int port = 15110;
 
@@ -31,22 +29,19 @@ public class InputLoginService
 
     public void DoLoginLogic(InputEntity entity)
     {
-        if (is_do)
-        {
-            return;
-        }
         Debug.Log("Login Result DoLoginLogic");
-        is_do = true;
-
         //XIL.AI.Behavior3Sharp.TestB3.Test();
         //LoginAuthHttp.Test();
         AuthPackage cmd = m_contexts.input.loginCMDEntity.loginCMD.cmd;
         LoginAuthHttp.DoLoginReqAction(cmd, DoLoginRespAction);
+
+        m_contexts.input.RemoveLoginCMD();
     }
 
     private void DoLoginRespAction(AuthPackageResp resp)
     {
-        NLog.Log.Debug("+++++DoLoginRespAction Resp+++++++++" + resp.gate);
-        //Debug.Log("#################" + resp.gate);
+        string str = DebugHelper.DumpJson<AuthPackageResp>(resp);
+        Debug.Log(str);
+        //NLog.Log.Debug("+++++DoLoginRespAction Resp+++++++++" + resp.gate);
     }
 }

@@ -527,6 +527,7 @@
     <Compile Include="Assets\Plugins\UniRx\BindingsRx\Filters\DynamicSampleFilter.cs" />
     <Compile Include="Assets\Plugins\UniRx\BindingsRx\Filters\IFilter.cs" />
     <Compile Include="Assets\Plugins\UniRx\BindingsRx\Filters\SampleFilter.cs" />
+    <Compile Include="Assets\Plugins\Utils\DebugHelper.cs" />
     <None Include="Assets\Plugins\AstarPathfindingProject\Plugins\DotNetZip\DotNetZipLicense.txt" />
     <None Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\Materials\DiffuseAlwaysVisible.shader" />
     <None Include="Assets\Plugins\AstarPathfindingProject\Plugins\dependencies.txt" />

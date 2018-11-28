@@ -26,7 +26,6 @@ public class LoginCMDSystem : ReactiveSystem<InputEntity>
         foreach (var entity in entities)
         {
             InputLoginService.singleton.DoLoginLogic(entity);
-            //TODO: 立刻 删除此 entity？
         }
 
     }

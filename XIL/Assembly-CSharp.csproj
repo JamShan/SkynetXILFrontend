@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>4</LangVersion>
@@ -61,6 +61,33 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameInputComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GamePlayerComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\Components\InputLoginCMDComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameGameDataSetupComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameAccelerationComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameAsteroidComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameInitialPositionComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameLaserComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameResourceComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameViewComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameCollisionComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameDestroyedComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Components\GameDataSetupComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameComponentsLookup.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\InputComponentsLookup.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameAttribute.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\InputAttribute.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameContext.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\InputContext.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameMatcher.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\InputMatcher.cs" />
+    <Compile Include="Assets\Sources\Generated\Contexts.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameEntity.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\InputEntity.cs" />
+    <Compile Include="Assets\Sources\Generated\Feature.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\HotScripts\MonoSerialTest.cs" />
     <Compile Include="Assets\HotScripts\TestSer.cs" />
     <Compile Include="Assets\Scripts\Controllers\GameController.cs" />
@@ -68,59 +95,11 @@
     <Compile Include="Assets\Scripts\Demos\HelloWorld.cs" />
     <Compile Include="Assets\Scripts\Protos\GameProtoC2S.cs" />
     <Compile Include="Assets\Scripts\Protos\GameProtoS2C.cs" />
-    <Compile Include="Assets\Sources\Components\Game\AccelerationComponent.cs" />
-    <Compile Include="Assets\Sources\Components\Game\AsteroidComponent.cs" />
-    <Compile Include="Assets\Sources\Components\Game\CollisionComponent.cs" />
-    <Compile Include="Assets\Sources\Components\Game\DestroyedComponent.cs" />
-    <Compile Include="Assets\Sources\Components\Game\InitialPositionComponent.cs" />
-    <Compile Include="Assets\Sources\Components\Game\LaserComponent.cs" />
-    <Compile Include="Assets\Sources\Components\Game\PlayerComponent.cs" />
-    <Compile Include="Assets\Sources\Components\Game\ResourceComponent.cs" />
-    <Compile Include="Assets\Sources\Components\Game\ViewComponent.cs" />
+    <Compile Include="Assets\Sources\Components\Game\GameComponents.cs" />
     <Compile Include="Assets\Sources\Components\Unique\Game\GameDataSetup.cs" />
-    <Compile Include="Assets\Sources\Components\Unique\Game\InputComponent.cs" />
-    <Compile Include="Assets\Sources\Components\Unique\Input\LoginCMD.cs" />
+    <Compile Include="Assets\Sources\Components\Unique\Game\GameUniqueComponents.cs" />
+    <Compile Include="Assets\Sources\Components\Unique\Input\InputUniqueComponents.cs" />
     <Compile Include="Assets\Sources\Data\Game\EmitTriggerEntityBehaviour.cs" />
-    <Compile Include="Assets\Sources\Generated\Components\GameDataSetupComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Contexts.cs" />
-    <Compile Include="Assets\Sources\Generated\Events\EventsAttribute.cs" />
-    <Compile Include="Assets\Sources\Generated\Events\EventsComponentsLookup.cs" />
-    <Compile Include="Assets\Sources\Generated\Events\EventsContext.cs" />
-    <Compile Include="Assets\Sources\Generated\Events\EventsEntity.cs" />
-    <Compile Include="Assets\Sources\Generated\Events\EventsMatcher.cs" />
-    <Compile Include="Assets\Sources\Generated\Feature.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\Components\GameAccelerationComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\Components\GameAsteroidComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\Components\GameCollisionComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\Components\GameDestroyedComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\Components\GameGameDataSetupComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\Components\GameInitialPositionComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\Components\GameInputComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\Components\GameLaserComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\Components\GamePlayerComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\Components\GameResourceComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\Components\GameViewComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\GameAttribute.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\GameComponentsLookup.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\GameContext.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\GameEntity.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\GameMatcher.cs" />
-    <Compile Include="Assets\Sources\Generated\GameState\GameStateAttribute.cs" />
-    <Compile Include="Assets\Sources\Generated\GameState\GameStateComponentsLookup.cs" />
-    <Compile Include="Assets\Sources\Generated\GameState\GameStateContext.cs" />
-    <Compile Include="Assets\Sources\Generated\GameState\GameStateEntity.cs" />
-    <Compile Include="Assets\Sources\Generated\GameState\GameStateMatcher.cs" />
-    <Compile Include="Assets\Sources\Generated\Input\Components\InputLoginCMDComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Input\InputAttribute.cs" />
-    <Compile Include="Assets\Sources\Generated\Input\InputComponentsLookup.cs" />
-    <Compile Include="Assets\Sources\Generated\Input\InputContext.cs" />
-    <Compile Include="Assets\Sources\Generated\Input\InputEntity.cs" />
-    <Compile Include="Assets\Sources\Generated\Input\InputMatcher.cs" />
-    <Compile Include="Assets\Sources\Generated\Simulate\SimulateAttribute.cs" />
-    <Compile Include="Assets\Sources\Generated\Simulate\SimulateComponentsLookup.cs" />
-    <Compile Include="Assets\Sources\Generated\Simulate\SimulateContext.cs" />
-    <Compile Include="Assets\Sources\Generated\Simulate\SimulateEntity.cs" />
-    <Compile Include="Assets\Sources\Generated\Simulate\SimulateMatcher.cs" />
     <Compile Include="Assets\Sources\Services\Game\GameEntityService.cs" />
     <Compile Include="Assets\Sources\Services\Game\GameServices.cs" />
     <Compile Include="Assets\Sources\Services\Input\InputLoginService.cs" />
