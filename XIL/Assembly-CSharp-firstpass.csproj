@@ -495,38 +495,9 @@
     <Compile Include="Assets\Plugins\Sproto\sproto-Unity\sproto-Unity\NetCore.cs" />
     <Compile Include="Assets\Plugins\Sproto\sproto-Unity\sproto-Unity\NetReceiver.cs" />
     <Compile Include="Assets\Plugins\Sproto\sproto-Unity\sproto-Unity\NetSender.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Bindings\AnimatorExtensions.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Bindings\CanvasElementExtensions.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Bindings\DropdownExtensions.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Bindings\GameObjectExtensions.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Bindings\GenericBindings.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Bindings\ImageExtensions.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Bindings\InputFieldExtensions.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Bindings\MaterialExtensions.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Bindings\MonoBehaviourExtensions.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Bindings\ParticleSystemExtensions.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Bindings\RectTransformExtensions.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Bindings\ScrollBarExtensions.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Bindings\ScrollRectExtensions.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Bindings\SliderExtensions.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Bindings\TextExtensions.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Bindings\ToggleExtensions.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Bindings\TransformExtensions.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\BindingsRxExample.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\BindingTypes.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Converters\DoubleToFloatConverter.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Converters\IConverter.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Converters\TextToDateConverter.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Converters\TextToDoubleConverter.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Converters\TextToFloatConverter.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Converters\TextToIntConverter.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Converters\TextToTimeSpanConverter.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Exceptions\SetterNotProvidedException.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Extensions\IObservableExtensions.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Extensions\IReactivePropertyExtensions.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Filters\DynamicSampleFilter.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Filters\IFilter.cs" />
-    <Compile Include="Assets\Plugins\UniRx\BindingsRx\Filters\SampleFilter.cs" />
+    <Compile Include="Assets\Plugins\Timer\Example\TestTimerBehaviour.cs" />
+    <Compile Include="Assets\Plugins\Timer\Source\Timer.cs" />
+    <Compile Include="Assets\Plugins\Timer\Source\TimerExtensions.cs" />
     <Compile Include="Assets\Plugins\Utils\DebugHelper.cs" />
     <None Include="Assets\Plugins\AstarPathfindingProject\Plugins\DotNetZip\DotNetZipLicense.txt" />
     <None Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\Materials\DiffuseAlwaysVisible.shader" />
@@ -536,7 +507,6 @@
     <None Include="Assets\Plugins\JsonDotNet\link.xml" />
     <None Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\Materials\Projector Light.shader" />
     <None Include="Assets\Plugins\AstarPathfindingProject\Readme.txt" />
-    <None Include="Assets\Plugins\UniRx\UniRx\ReadMe.txt" />
     <None Include="Assets\Plugins\Entitas\Entitas\Entitas.xml" />
     <None Include="Assets\Plugins\HttpClient\readme.txt" />
     <None Include="Assets\Plugins\Entitas\Entitas\LICENSE.txt" />
@@ -834,20 +804,6 @@
     <Reference Include="Boo.Lang">
       <HintPath>D:/Apps/Unity 2018.3.0b9/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/Boo.Lang.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="UniRx.csproj">
-      <Project>{33C4B7E8-A4D6-3B16-E92B-2F8B40A2CBFD}</Project>
-      <Name>UniRx</Name>
-    </ProjectReference>
-    <ProjectReference Include="UniRx.Async.csproj">
-      <Project>{E2178842-82AA-1648-6300-13A6592F83D1}</Project>
-      <Name>UniRx.Async</Name>
-    </ProjectReference>
-    <ProjectReference Include="UniRx.Async.Editor.csproj">
-      <Project>{BC6BC1B1-186B-5561-B472-6E5674CA9DD5}</Project>
-      <Name>UniRx.Async.Editor</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
