@@ -278,7 +278,17 @@
     <Compile Include="Assets\Plugins\AstarPathfindingProject\Utilities\ProfileHelper.cs" />
     <Compile Include="Assets\Plugins\AstarPathfindingProject\Utilities\RetainedGizmos.cs" />
     <Compile Include="Assets\Plugins\AstarPathfindingProject\Utilities\UnityReferenceHelper.cs" />
+    <Compile Include="Assets\Plugins\CielaSpike\Thread Ninja\Example\ExampleScript.cs" />
+    <Compile Include="Assets\Plugins\CielaSpike\Thread Ninja\Ninja.cs" />
+    <Compile Include="Assets\Plugins\CielaSpike\Thread Ninja\Task.cs" />
+    <Compile Include="Assets\Plugins\CielaSpike\Thread Ninja\TaskState.cs" />
+    <Compile Include="Assets\Plugins\CielaSpike\Thread Ninja\ThreadNinjaMonoBehaviourExtensions.cs" />
     <Compile Include="Assets\Plugins\Entitas\DesperateDevs\Compile.cs" />
+    <Compile Include="Assets\Plugins\EventSystem\EventDispatcher.cs" />
+    <Compile Include="Assets\Plugins\EventSystem\EventManager.cs" />
+    <Compile Include="Assets\Plugins\EventSystem\EventSystemDefine.cs" />
+    <Compile Include="Assets\Plugins\EventSystem\EventSystemTester.cs" />
+    <Compile Include="Assets\Plugins\EventSystem\IEventListener.cs" />
     <Compile Include="Assets\Plugins\FairyGUI\Scripts\Core\BlendMode.cs" />
     <Compile Include="Assets\Plugins\FairyGUI\Scripts\Core\CaptureCamera.cs" />
     <Compile Include="Assets\Plugins\FairyGUI\Scripts\Core\Container.cs" />

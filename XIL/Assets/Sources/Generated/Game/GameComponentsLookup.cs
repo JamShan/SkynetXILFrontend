@@ -12,21 +12,43 @@ public static class GameComponentsLookup {
     public const int Asteroid = 1;
     public const int Collision = 2;
     public const int Destroyed = 3;
-    public const int GameDataSetup = 4;
-    public const int InitialPosition = 5;
-    public const int Input = 6;
-    public const int Laser = 7;
-    public const int Player = 8;
-    public const int Resource = 9;
-    public const int View = 10;
+    public const int FSMAdapter = 4;
+    public const int FSMContinue = 5;
+    public const int FSMHold = 6;
+    public const int FSMProcessingCnt = 7;
+    public const int FSMProcessing = 8;
+    public const int FSMProcessingListener = 9;
+    public const int FSMReset = 10;
+    public const int FSMReturn = 11;
+    public const int FSMStack = 12;
+    public const int FSMState = 13;
+    public const int FSMSwitch = 14;
+    public const int GameDataSetup = 15;
+    public const int InitialPosition = 16;
+    public const int Input = 17;
+    public const int Laser = 18;
+    public const int Player = 19;
+    public const int Resource = 20;
+    public const int View = 21;
 
-    public const int TotalComponents = 11;
+    public const int TotalComponents = 22;
 
     public static readonly string[] componentNames = {
         "Acceleration",
         "Asteroid",
         "Collision",
         "Destroyed",
+        "FSMAdapter",
+        "FSMContinue",
+        "FSMHold",
+        "FSMProcessingCnt",
+        "FSMProcessing",
+        "FSMProcessingListener",
+        "FSMReset",
+        "FSMReturn",
+        "FSMStack",
+        "FSMState",
+        "FSMSwitch",
         "GameDataSetup",
         "InitialPosition",
         "Input",
@@ -41,6 +63,17 @@ public static class GameComponentsLookup {
         typeof(AsteroidComponent),
         typeof(CollisionComponent),
         typeof(DestroyedComponent),
+        typeof(FSMAdapterComponent),
+        typeof(FSMContinueComponent),
+        typeof(FSMHoldComponent),
+        typeof(FSMProcessingCntComponent),
+        typeof(FSMProcessingComponent),
+        typeof(FSMProcessingListenerComponent),
+        typeof(FSMResetComponent),
+        typeof(FSMReturnComponent),
+        typeof(FSMStackComponent),
+        typeof(FSMStateComponent),
+        typeof(FSMSwitchComponent),
         typeof(GameDataSetupComponent),
         typeof(InitialPositionComponent),
         typeof(InputComponent),

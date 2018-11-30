@@ -1,12 +1,11 @@
-﻿public sealed class GameSystems : Feature {
+﻿public sealed class GameLogicSystems : Feature {
 
-    public GameSystems(Contexts contexts) {
+    public GameLogicSystems(Contexts contexts) {
 
         Add(new InputSystem(contexts));
         Add(new ShootSystem(contexts));
         Add(new HitAsteroidSystem(contexts));
 
-        //Init
         Add(new InitializePlayerSystem(contexts));
         Add(new InitializeAsteroidsSystem(contexts));
 
@@ -21,9 +20,6 @@
 
         Add(new MapAsteroidLevelToResourceSystem(contexts));
 
-        //// Events
-
-        // Cleanup
         Add(new DestroyEntitySystem(contexts));
     }
 }
