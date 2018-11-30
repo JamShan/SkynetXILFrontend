@@ -505,9 +505,9 @@
     <Compile Include="Assets\Plugins\Sproto\sproto-Unity\sproto-Unity\NetCore.cs" />
     <Compile Include="Assets\Plugins\Sproto\sproto-Unity\sproto-Unity\NetReceiver.cs" />
     <Compile Include="Assets\Plugins\Sproto\sproto-Unity\sproto-Unity\NetSender.cs" />
-    <Compile Include="Assets\Plugins\Timer\Example\TestTimerBehaviour.cs" />
-    <Compile Include="Assets\Plugins\Timer\Source\Timer.cs" />
-    <Compile Include="Assets\Plugins\Timer\Source\TimerExtensions.cs" />
+    <Compile Include="Assets\Plugins\Timer\TestTimerBehaviour.cs" />
+    <Compile Include="Assets\Plugins\Timer\Timer.cs" />
+    <Compile Include="Assets\Plugins\Timer\TimerExtensions.cs" />
     <Compile Include="Assets\Plugins\Utils\DebugHelper.cs" />
     <None Include="Assets\Plugins\AstarPathfindingProject\Plugins\DotNetZip\DotNetZipLicense.txt" />
     <None Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\Materials\DiffuseAlwaysVisible.shader" />
