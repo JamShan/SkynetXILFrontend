@@ -332,9 +332,6 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
-      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
-    </Reference>
     <Reference Include="DesperateDevs.Logging">
       <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/Entitas/DesperateDevs/DesperateDevs.Logging.dll</HintPath>
     </Reference>

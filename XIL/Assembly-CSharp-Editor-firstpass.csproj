@@ -61,24 +61,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Plugins\AstarPathfindingProject\Editor\AIBaseEditor.cs" />
-    <Compile Include="Assets\Plugins\AstarPathfindingProject\Editor\AnimationLinkEditor.cs" />
-    <Compile Include="Assets\Plugins\AstarPathfindingProject\Editor\AstarPathEditor.cs" />
-    <Compile Include="Assets\Plugins\AstarPathfindingProject\Editor\AstarUpdateChecker.cs" />
-    <Compile Include="Assets\Plugins\AstarPathfindingProject\Editor\AstarUpdateWindow.cs" />
-    <Compile Include="Assets\Plugins\AstarPathfindingProject\Editor\CustomGraphEditorAttribute.cs" />
-    <Compile Include="Assets\Plugins\AstarPathfindingProject\Editor\EditorGUIx.cs" />
-    <Compile Include="Assets\Plugins\AstarPathfindingProject\Editor\GraphEditors\GraphEditor.cs" />
-    <Compile Include="Assets\Plugins\AstarPathfindingProject\Editor\GraphEditors\GridGeneratorEditor.cs" />
-    <Compile Include="Assets\Plugins\AstarPathfindingProject\Editor\GraphEditors\NavMeshGeneratorEditor.cs" />
-    <Compile Include="Assets\Plugins\AstarPathfindingProject\Editor\GraphEditors\PointGeneratorEditor.cs" />
-    <Compile Include="Assets\Plugins\AstarPathfindingProject\Editor\GraphUpdateSceneEditor.cs" />
-    <Compile Include="Assets\Plugins\AstarPathfindingProject\Editor\Misc\AstarEnumFlagDrawer.cs" />
-    <Compile Include="Assets\Plugins\AstarPathfindingProject\Editor\ModifierEditors\RaycastModifierEditor.cs" />
-    <Compile Include="Assets\Plugins\AstarPathfindingProject\Editor\ModifierEditors\SmoothModifierEditor.cs" />
-    <Compile Include="Assets\Plugins\AstarPathfindingProject\Editor\SeekerEditor.cs" />
-    <Compile Include="Assets\Plugins\AstarPathfindingProject\Legacy\Editor\LegacyAIPathEditor.cs" />
-    <Compile Include="Assets\Plugins\AstarPathfindingProject\Legacy\Editor\LegacyEditorHelper.cs" />
     <Compile Include="Assets\Plugins\FairyGUI\Scripts\Editor\DisplayObjectEditor.cs" />
     <Compile Include="Assets\Plugins\FairyGUI\Scripts\Editor\EditorToolSet.cs" />
     <Compile Include="Assets\Plugins\FairyGUI\Scripts\Editor\PackagesWindow.cs" />
@@ -89,9 +71,6 @@
     <Compile Include="Assets\Plugins\FairyGUI\Scripts\Editor\UIPanelEditor.cs" />
     <Compile Include="Assets\Plugins\NLog\NLog.Unity\Editor\ClientSocketAppenderEditor.cs" />
     <Compile Include="Assets\Plugins\NLog\NLog.Unity\Editor\SOSMaxSocketAppenderEditor.cs" />
-    <None Include="Assets\Plugins\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.cginc" />
-    <None Include="Assets\Plugins\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.shader" />
-    <None Include="Assets\Plugins\AstarPathfindingProject\Editor\EditorAssets\Materials\NavmeshOutline.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/workspace/SkynetXILFrontend/XIL/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -340,9 +319,6 @@
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
-    </Reference>
-    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
-      <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="DesperateDevs.Logging">
       <HintPath>D:/workspace/SkynetXILFrontend/XIL/Assets/Plugins/Entitas/DesperateDevs/DesperateDevs.Logging.dll</HintPath>

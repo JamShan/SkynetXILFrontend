@@ -5,3 +5,4 @@ AliceV2
 XIL
 bitstrap
 Entitas-GameFSM
+AstarPathfindingProject
